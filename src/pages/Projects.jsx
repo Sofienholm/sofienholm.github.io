@@ -1,4 +1,4 @@
-export function Projects() {
+export default function Projects() {
   return (
     <div>
       <h1>About Page</h1>
