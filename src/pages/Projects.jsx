@@ -1,10 +1,10 @@
-import ClientsSection from "../components/ClientsSection";
+import ProjektSection from "./components/ProjektSection";
 export default function Projects() {
   return (
-    <div>
+    <section className="Clients">
       <h1>About Page</h1>
       <p>This is the about page of the application.</p>
-      <ClientsSection />
-    </div>
+      <ProjektSection />
+    </section>
   );
 }
