@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>hejhhh </p>
-    </div>
+    <>
+      <h1>Hej – jeg er Sofie</h1>
+      <p>Multimediedesign • Frontend • React</p>
+    </>
   );
 }
