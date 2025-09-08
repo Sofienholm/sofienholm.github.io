@@ -1,0 +1,62 @@
+[
+  {
+    "id": "0",
+    "name": "House of Vincent",
+    "subtitle": "Website + Webshop",
+    "body": "House of Vincent's webshop is implemented with Shopify and has several customised features. The customisations of the Shopify theme are made with Liquid, JavaScript, HTML and CSS.",
+    "links": [
+      {
+        "url": "https://houseofvincent.com",
+        "text": "Go to website and webshop"
+      }
+    ],
+    "image": "https://cederdorff.com/img/houseofvincent.webp"
+  },
+  {
+    "id": "1",
+    "name": "BouMatic A/S & BouTime App",
+    "subtitle": "WEBSITE + WEB APP + MOBILE APP",
+    "body": "BouMatic A/S is an international company that delivers dairy solutions. I have designed and implemented their WordPress Website and an intranet app for web and mobile called BouTime. The BouTime App is developed with JavaScript and the Ionic Framework.",
+    "links": [{ "url": "https://boumatic.dk", "text": "Go to website" }],
+    "image": "https://cederdorff.com/img/boutime_web.webp"
+  },
+  {
+    "id": "2",
+    "name": "Café Sidewalk",
+    "subtitle": "Website",
+    "body": "Probably the Coziest Café with the best location in Aarhus. The website is implemented with WordPress and customisations in a child theme.",
+    "links": [{ "url": "https://sidewalk.dk/", "text": "Go to website" }],
+    "image": "https://cederdorff.com/img/sidewalk.webp"
+  },
+  {
+    "id": "3",
+    "name": "theBIGfridge",
+    "subtitle": "Mobile App",
+    "body": "theBIGfridge is a mobile app for iOS, developed with the Ionic Framework. The main focus of the theBIGfridge is to minimise the waste of food. The app is available for iPhone.",
+    "links": [
+      {
+        "url": "https://apps.apple.com/dk/app/thebigfridge/id1471370471",
+        "text": "View in App Store"
+      }
+    ],
+    "image": "https://cederdorff.com/img/thebigfridge_web.webp"
+  },
+
+  {
+    "id": "4",
+    "name": "CPH Cloud Company",
+    "subtitle": "Web & App Development",
+    "body": "As Freelance Web App developer for CPH Cloud Company ApS, I have worked with several clients like Dansk Retursystem, Troelstrup, Novo Nordisk and Kongernes Samling.",
+    "links": [{ "url": "https://cphcloud.com", "text": "Go To cphcloud.com" }],
+    "image": "https://cederdorff.com/img/cphcloud_web.webp"
+  },
+
+  {
+    "id": "5",
+    "name": "Karolines Hus",
+    "subtitle": "Website",
+    "body": "Karolines Hus is a gallery located on Fur in Denmark. The website is implemented with WordPress.",
+    "links": [{ "url": "https://karolineshus.dk/", "text": "Go To Website" }],
+    "image": "https://cederdorff.com/img/karolineshus_web.webp"
+  }
+]
