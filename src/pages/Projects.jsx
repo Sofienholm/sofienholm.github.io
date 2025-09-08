@@ -1,8 +1,27 @@
-export default function Projects() {
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
+
+export default function Project() {
+  const [project, setProject] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch("/data/projects.json");
+      const data = await response.json();
+      setProject(data);
+    }
+    getData();
+  }, []);
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>This is the about page of the application.</p>
-    </div>
+    <section id="projects">
+      <div className="headline-container">
+        <h2>Clients</h2>
+      </div>
+      {project.map((project) => (
+        <div key={project.id}>
+          <NavLink to={`/projects/${project.id}`}>Læs mere</NavLink>
+        </div>
+      ))}
+    </section>
   );
 }
