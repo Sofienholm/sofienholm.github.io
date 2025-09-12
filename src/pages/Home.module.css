@@ -1,0 +1,34 @@
+.hero {
+  position: relative;
+  text-align: center;
+  min-height: 90vh;
+}
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.img1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.img2 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+.img3 {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+}
+.img4 {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.year {
+  margin-top: 16rem;
+  font-weight: 500;
+}
