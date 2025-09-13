@@ -1,9 +1,8 @@
+/* src/components/Header.module.css */
 .header {
   background: #222;
   color: #fff;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   border-radius: 8px;
 }
