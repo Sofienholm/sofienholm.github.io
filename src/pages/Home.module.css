@@ -55,7 +55,7 @@ p {
   }
 
   .img1 {
-    top: 5%;
+    bottom: 10%;
     left: 5%;
     transform: none;
     width: 15rem;
@@ -66,17 +66,19 @@ p {
     left: 50%;
     transform: translateX(-50%);
     width: 15rem;
+    z-index: 1;
   }
 
   .img3 {
-    top: 60%;
-    left: 15%;
+    top: 10%;
+    right: 5%;
+    left: auto;
     transform: none;
     width: 15rem;
   }
 
   .img4 {
-    top: 55%;
+    bottom: 10%;
     right: 5%;
     left: auto;
     transform: none;
@@ -90,29 +92,30 @@ p {
   }
 
   .img1 {
-    top: 20%;
-    left: 5%;
-    width: 20rem;
+    bottom: 15%;
+    left: 10%;
+    width: 18rem;
   }
 
   .img2 {
-    top: 15%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 20rem;
+    width: 25rem;
+    z-index: 1;
   }
 
   .img3 {
-    bottom: 20%;
-    top: auto;
-    left: 15%;
-    width: 20rem;
+    top: 5%;
+    right: 10%;
+    left: auto;
+    width: 18rem;
   }
 
   .img4 {
-    bottom: 10%;
-    top: auto;
+    bottom: 5%;
     right: 10%;
-    width: 20rem;
+    left: auto;
+    width: 18rem;
   }
 }
