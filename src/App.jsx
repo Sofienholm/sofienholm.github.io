@@ -6,13 +6,11 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
 import Nav from "./Components/NavLink";
 import Header from "./Components/Header";
-import { Navigate } from "react-router";
 
 function App() {
   return (
     <div>
       <Header />
-      <Nav />
       <Routes>
         {/* Routes go here */}
         <Route path="/" element={<Home />} />
@@ -21,6 +19,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
+      <Nav />
     </div>
   );
 }
