@@ -4,31 +4,52 @@
   min-height: 90vh;
 }
 .title {
-  font-family: "Dancing Script", cursive;
-  font-size: 4rem;
-  margin-top: 2rem;
+  font-family: "beth-ellen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  z-index: 1000;
+  position: relative;
 }
 .img1 {
   position: absolute;
   top: 20%;
   left: 5%;
+  width: 20rem;
+  height: auto;
 }
 .img2 {
   position: absolute;
   top: 15%;
-  right: 5%;
+  right: 40%;
+  width: 20rem;
+  height: auto;
 }
 .img3 {
   position: absolute;
   bottom: 20%;
   left: 15%;
+  width: 20rem;
+  height: auto;
 }
 .img4 {
   position: absolute;
   bottom: 10%;
   right: 10%;
+  width: 20rem;
+  height: auto;
 }
-.year {
+.year,
+p {
+  font-family: "poppins", sans-serif;
   margin-top: 16rem;
-  font-weight: 500;
+  font-size: 2rem;
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img {
+  width: 20rem;
+  height: 20rem;
 }
