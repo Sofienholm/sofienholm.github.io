@@ -1,0 +1,62 @@
+/* --- Burger-knap (3 streger -> X) --- */
+.hamburger {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3000; /* over alt indhold/billeder */
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background: #111;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.2s ease;
+}
+
+/* Morph til X når åben */
+.hamburger.is-open .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.hamburger.is-open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-open .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* --- react-burger-menu klasser (fra lib'en) --- */
+.bm-menu-wrap {
+  top: 0;
+} /* menuens wrapper */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.35);
+} /* overlay ved åben menu */
+
+.bm-menu {
+  background: #fff;
+  padding: 3rem 2rem 2rem;
+  font-size: 1.05rem;
+}
+
+.menu-list .menu-item {
+  display: block;
+  color: #111;
+  text-decoration: none;
+  padding: 0.6rem 0;
+}
+
+/* Aktivt link (NavLink får .active) */
+.menu-list .menu-item.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
