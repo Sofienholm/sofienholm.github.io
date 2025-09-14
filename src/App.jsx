@@ -6,15 +6,10 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
 import Nav from "./Components/NavLink";
 
-import BurgerMenu from "./Components/BurgerMenu";
 
 function App() {
   return (
     <div>
-      <div id="outer-container">
-        <BurgerMenu />
-        <main id="page-wrap">{/* Routes & øvrigt indhold */}</main>
-      </div>
       <Routes>
         {/* Routes go here */}
         <Route path="/" element={<Home />} />
