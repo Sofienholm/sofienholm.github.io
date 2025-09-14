@@ -1,0 +1,53 @@
+.intro-section {
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+  position: relative;
+  width: 100%; /* fylder hele bredden */
+  margin: 30rem 0;
+}
+.intro-text {
+  flex: 1;
+  padding-left: 10rem; /* skubber teksten lidt ind fra venstre */
+  z-index: 2;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 500px; /* holder styr på linjelængden */
+}
+
+.intro-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #514944;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.intro-btn:hover {
+  background-color: #7c716b;
+}
+
+.intro-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.intro-image img {
+  height: 230%;
+  width: auto;
+}

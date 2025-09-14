@@ -1,0 +1,52 @@
+.project-showcase {
+  padding: 6rem 2rem;
+  background: #f5f5f0;
+  color: #3a3a38;
+  margin-top: -12rem;
+}
+
+.project-title {
+  font-size: 8rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.intro-tekst,
+.outro-text {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 1rem);
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.gallery-item img:hover {
+  filter: grayscale(0%);
+}
