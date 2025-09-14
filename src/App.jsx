@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router"; // <- vigtigt
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
 import BurgerMenu from "./Components/BurgerMenu.jsx"; // vi bruger samme filnavn som før
-
+import "./animations.css";
 function App() {
   return (
     <div id="outer-container">

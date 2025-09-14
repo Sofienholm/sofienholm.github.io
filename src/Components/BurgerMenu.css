@@ -1,62 +1,125 @@
-/* --- Burger-knap (3 streger -> X) --- */
 .hamburger {
   position: fixed;
-  right: 16px;
-  top: 16px;
-  width: 32px;
-  height: 24px;
+  right: 36px;
+  top: 36px;
+  width: 36px;
+  height: 30px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   background: transparent;
-  border: 0;
+  border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 3000; /* over alt indhold/billeder */
+  z-index: 3000;
 }
 
 .hamburger .bar {
   width: 100%;
-  height: 3px;
-  background: #111;
+  height: 4px;
+  background: #514944; /* lukket farve */
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
-/* Morph til X når åben */
+/* Hover på hele knappen ændrer ALLE streger */
+.hamburger:hover .bar {
+  background: #7c716b; /* hover farve */
+}
+
+/* Når menuen er åben (X-ikon), beholder stregerne hover-farven */
+.hamburger.is-open .bar {
+  background: #7c716b; /* fastholder hover-farven indtil lukket */
+}
+
+/* Morphing til X når menu er åben */
 .hamburger.is-open .bar:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
 }
 .hamburger.is-open .bar:nth-child(2) {
   opacity: 0;
 }
 .hamburger.is-open .bar:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+/* --- Styles fra react-burger-menu / GitHub --- */
+
+.bm-burger-button {
+  /* Hvis du bruger lib’ens burger-button (måske ikke hvis du bruger din egen knap) */
+  position: fixed;
+  right: 36px; /* højre side */
+  left: auto;
+  top: 36px;
+  width: 36px;
+  height: 30px;
 }
 
-/* --- react-burger-menu klasser (fra lib'en) --- */
+.bm-burger-bars {
+  background: #514944;
+}
+
+.bm-burger-bars-hover {
+  background: #514944;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 36px;
+  left: auto;
+  position: fixed; /* så krydsikonet ligger over menuen ved åben */
+  top: 36px;
+  color: antiquewhite;
+}
+
+.bm-cross {
+  background: #efd3e3;
+}
+
+/* Menu wrapper der indeholder sidebar */
 .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  /* når den åbner fra højre, lib’en håndterer trafikken hvis du har prop right */
   top: 0;
-} /* menuens wrapper */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.35);
-} /* overlay ved åben menu */
+  right: 0;
+  /* left: auto; */
+}
 
+/* Selve menuen baggrund, padding etc */
 .bm-menu {
-  background: #fff;
-  padding: 3rem 2rem 2rem;
-  font-size: 1.05rem;
+  background: #514944;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
 }
 
-.menu-list .menu-item {
+/* Morphen (bruges med elastic) */
+.bm-morph-shape {
+  fill: #514944;
+}
+
+/* Liste af items i menuen */
+.bm-item-list {
+  color: #efd3e3;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individuelle items */
+.bm-item {
   display: block;
-  color: #111;
   text-decoration: none;
-  padding: 0.6rem 0;
+  margin: 0.5em 0;
+  color: #efd3e3;
+  transition: color 0.2s ease;
 }
 
-/* Aktivt link (NavLink får .active) */
-.menu-list .menu-item.active {
-  font-weight: 600;
-  text-decoration: underline;
+.bm-item:hover {
+  color: #ffffff;
+}
+
+/* Overlay når menuen er åben */
+.bm-overlay {
+  background: #514944;
 }

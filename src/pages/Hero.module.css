@@ -1,0 +1,295 @@
+.hero {
+  --duration1: 2.5s;
+  --duration2: calc(var(--duration1) / 2);
+  --delay1: calc(var(--duration2) / 2);
+  --delay2: calc(var(--duration2) + var(--delay1));
+  --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+  position: relative;
+  text-align: center;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+.heroInner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Titel */
+.title {
+  font-family: "beth-ellen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem; /* basisstørrelse, overskrives i media */
+  margin-top: 1rem;
+  margin-bottom: 2em;
+  opacity: 0;
+  transform: translateY(3em);
+  animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
+  z-index: 1000;
+  position: relative;
+  color: #514944;
+}
+
+/* Billeder */
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
+}
+
+/* Tekstblok nederst */
+.textBlock {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.year,
+.scroll {
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  transform: translateY(1em);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: calc(var(--delay2) + 1.2s);
+  margin: 0.2rem 0;
+}
+
+
+/* ===== MOBIL: <700px ===== */
+@media (max-width: 699px) {
+  .title {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Lav et grid i stedet for absolute */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    position: static;         /* fjern absolute */
+    transform: none;
+    animation: none;          /* valgfrit: kan beholdes hvis du vil animere */
+    opacity: 1;
+    width: 45%;               /* 2 per række */
+    margin: 0.5rem;
+  }
+
+  .heroInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    justify-items: center;
+  }
+
+  .textBlock {
+    position: static;         /* flyt teksten ned under grid */
+    margin-top: 1.5rem;
+    transform: none;
+  }
+
+  .year,
+  .scroll {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1199px) {
+  .title { font-size: 5rem; }
+
+  .img1 { bottom: 55%; left: 8%;  width: 16vw; }
+  .img2 { top: 15%;   left: 39%; transform: translateX(-50%); width: 28vw; z-index: 1; }
+  .img3 { top: 18%;   right: 8%;  width: 12vw; }
+  .img4 { bottom: 50%; right: 8%; width: 12vw; }
+
+  .year, .scroll { font-size: 1.5rem; }
+  
+}
+
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .img1 {
+    bottom: 15%;
+    left: 10%;
+    width: 18rem;
+  }
+
+  .img2 {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25rem;
+    z-index: 1;
+  }
+
+  .img3 {
+    top: 5%;
+    right: 10%;
+    left: auto;
+    width: 18rem;
+  }
+
+  .img4 {
+    bottom: 5%;
+    right: 10%;
+    left: auto;
+    width: 18rem;
+  }
+
+  .hero {
+    --duration1: 2.5s;
+    --duration2: calc(var(--duration1) / 2);
+    --delay1: calc(var(--duration2) / 2);
+    --delay2: calc(var(--duration2) + var(--delay1));
+    --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+    position: relative;
+    text-align: center;
+    min-height: 90vh;
+    overflow: hidden;
+  }
+
+  .heroInner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Titel */
+  .title {
+    font-family: "beth-ellen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2em;
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(3em);
+    animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
+    z-index: 1000;
+    position: relative;
+    color: #514944;
+  }
+
+  /* Billeder */
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
+  }
+
+  /* Placeringerne fra dit gamle layout */
+  .img1 {
+    bottom: 30%;
+    left: 20%;
+    width: 16rem;
+  }
+  .img2 {
+    top: 15%;
+    left: 38%;
+    transform: translateX(-50%);
+    width: 30rem;
+    z-index: 1;
+  }
+  .img3 {
+    top: 25%;
+    right: 22%;
+    width: 13rem;
+  }
+  .img4 {
+    bottom: 20%;
+    right: 17%;
+    width: 13rem;
+  }
+
+  .textBlock {
+    position: absolute;
+    bottom: 2rem; /* placer nede i bunden */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .year,
+  .scroll {
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: calc(var(--delay2) + 1.2s);
+    margin: 0.2rem 0; /* lille mellemrum mellem de to tekster */
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadH1 {
+  0% {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  30%,
+  50% {
+    opacity: 1;
+    transform: translateY(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes loadImg {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
