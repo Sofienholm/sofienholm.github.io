@@ -125,7 +125,7 @@ export default function About() {
           className={`${styles.btn} ${styles.btnSolid}`}
           href="mailto:mail@ditdomæne.dk"
         >
-          Lad os snakke
+          Lad os snakke 
         </motion.a>
       </section>
     </main>

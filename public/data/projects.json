@@ -1,22 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Website",
+    "title": "BEDR BEER",
     "year": 2025,
-    "description": "Mit portfolio bygget med React.",
-    "tags": ["React", "Portfolio", "Frontend"],
-    "image": "/img/portfolio.webp",
+    "description": "Et branding- og webprojekt om alkoholfri øl med fokus på storytelling, visuel identitet og interaktivt design.",
+    "tags": ["Branding", "UI", "JS", "Design"],
+    "image": "src/assets/BEDRBEER/bedrbeer-1.png",
     "links": [
-      { "url": "https://cederdorff.github.io", "text": "React Portfolio" }
+      {
+        "url": "https://sofienholm.github.io/BEDR_BEER/",
+        "text": "Se projekt live"
+      }
     ]
   },
   {
     "id": 2,
-    "title": "BEDR BEER",
+    "title": "Cykelcyklus",
     "year": 2025,
-    "description": "Alkoholfri øl site (skitse).",
-    "tags": ["UI", "JS", "Design"],
-    "image": "/img/portfolio.webp",
-    "links": [{ "url": "#", "text": "Case" }]
+    "description": "En interaktiv udstilling til Steno Museet om menstruationscyklussen. Brugeren styrer flowet gennem en bold og oplever animationer og dataformidling.",
+    "tags": ["UX", "Interaktiv", "Figma", "Frontend"],
+    "image": "src/assets/CILLE/cycle-1.jpg",
+    "links": [{ "url": "#", "text": "Case coming soon" }]
+  },
+  {
+    "id": 3,
+    "title": "Plakatdesign",
+    "year": 2025,
+    "description": "Et grafisk designprojekt med fokus på responsivt layout, farver og logo-udvikling. Viser mine evner inden for grafisk design og visuel kommunikation.",
+    "tags": ["Grafisk Design", "Illustrator", "Farveteori"],
+    "image": "src/assets/PLAKATEN/poster-1.jpg",
+    "links": [{ "url": "#", "text": "Case coming soon" }]
   }
 ]
