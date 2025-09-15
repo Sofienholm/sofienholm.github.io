@@ -20,7 +20,7 @@ const stagger = {
 
 export default function About() {
   return (
-    <main>
+    <main className={styles.about}>
       {/* HERO */}
       <section className={`${styles.typoHero} ${styles.container}`}>
         <p className={styles.kicker}>about</p>
@@ -41,7 +41,7 @@ export default function About() {
       </section>
 
       {/* INTRO */}
-      <section className={styles.intro}>
+      <section className={`${styles.intro} ${styles.container}`}>
         <motion.div {...fadeUp}>
           <img
             src="/assets/about/me-portrait.jpg"
@@ -83,7 +83,10 @@ export default function About() {
       </section>
 
       {/* STATS */}
-      <section className={styles.stats} aria-label="Hurtige facts">
+      <section
+        className={`${styles.stats} ${styles.container}`}
+        aria-label="Hurtige facts"
+      >
         {[
           { num: "10+", label: "komponenter i mit UI-kit" },
           { num: "4", label: "kerne-skills: HTML, CSS, JS, React" },
@@ -103,20 +106,20 @@ export default function About() {
       </section>
 
       {/* SKILLS */}
-      <section className={styles.skills}>
-        <h2 className="visually-hidden">Færdigheder</h2>
+      <section className={`${styles.skills} ${styles.container}`}>
+        <h2 className={styles.visuallyHidden}>Færdigheder</h2>
         <SkillsSection />
       </section>
 
       {/* QUOTE */}
-      <section className={styles.quote}>
+      <section className={`${styles.quote} ${styles.container}`}>
         <motion.blockquote {...fadeUp}>
           “Simple flader. Små detaljer. Ren front-end.”
         </motion.blockquote>
       </section>
 
       {/* CTA */}
-      <section className={styles.contact}>
+      <section className={`${styles.contact} ${styles.container}`}>
         <motion.h3 {...fadeUp}>Klar på et projekt?</motion.h3>
         <motion.a
           className={`${styles.btn} ${styles.btnSolid}`}
