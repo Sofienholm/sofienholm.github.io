@@ -52,6 +52,7 @@ export default function ProjectsPanels() {
   // GSAP scroll animations
   useLayoutEffect(() => {
     if (!wrapRef.current) return;
+
     const ctx = gsap.context(() => {
       gsap.utils.toArray(".panel").forEach((panel) => {
         // progress var
@@ -114,7 +115,7 @@ export default function ProjectsPanels() {
           }
         );
 
-        // let parallax
+        // parallax image
         const img = panel.querySelector("img");
         if (img) {
           gsap.to(img, {
@@ -130,6 +131,9 @@ export default function ProjectsPanels() {
         }
       });
     }, wrapRef);
+
+    // 👇 vigtigt efter async data load
+    ScrollTrigger.refresh();
 
     return () => ctx.revert();
   }, [projects]);
