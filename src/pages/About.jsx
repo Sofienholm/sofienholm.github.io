@@ -25,7 +25,7 @@ export default function About() {
       <section className={`${styles.typoHero} ${styles.container}`}>
         <p className={styles.kicker}>about</p>
         <motion.h1 className={styles.big} {...fadeUp}>
-          Designer først
+          Hvem er jeg?
           <br />
           front-ender altid
           <br />

@@ -1,9 +1,9 @@
 import Hero from "./Hero.jsx";
 import Intro from "../Components/intro.jsx";
 import ProjectShowcase from "../Components/ProjectShowcase";
-import beer1 from "../assets/BEDRBEER/bedrbeer-1.png";
-import beer2 from "../assets/BEDRBEER/bedrbeer-2.png";
-import beer3 from "../assets/BEDRBEER/bedrbeer-3.png";
+import beer1 from "../assets/BEDRBEER/BB1.png";
+import beer2 from "../assets/BEDRBEER/BB2.png";
+import beer3 from "../assets/BEDRBEER/BB3.png";
 
 
 export default function Home() {

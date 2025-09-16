@@ -53,17 +53,19 @@
   isolation: isolate;
 }
 .typoHero::before {
-  content: "ABOUT";
+  content: "Om mig";
   position: absolute;
-  inset: auto auto 8% 0;
-  font-size: clamp(6rem, 18vw, 16rem);
+  inset: auto auto 48% 0;
+  font-size: clamp(6rem, 18vw, 19rem);
   line-height: 0.8;
   letter-spacing: -0.02em;
   color: var(--ink);
-  opacity: 0.05;
+  opacity: 0.09;
   z-index: -1;
   user-select: none;
   pointer-events: none;
+   font-family: "beth-ellen", sans-serif;
+
 }
 .big {
   font-size: clamp(2.4rem, 6vw, 4.6rem);

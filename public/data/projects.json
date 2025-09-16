@@ -1,18 +1,48 @@
 [
-  {
-    "id": 1,
-    "title": "BEDR BEER",
-    "year": 2025,
-    "description": "Et branding- og webprojekt om alkoholfri øl med fokus på storytelling, visuel identitet og interaktivt design.",
-    "tags": ["Branding", "UI", "JS", "Design"],
-    "image": "src/assets/BEDRBEER/bedrbeer-1.png",
-    "links": [
-      {
-        "url": "https://sofienholm.github.io/BEDR_BEER/",
-        "text": "Se projekt live"
-      }
-    ]
+{
+  "id": 1,
+  "title": "BEDR BEER",
+  "year": 2025,
+  "description": "Et branding- og webprojekt om alkoholfri øl, hvor fokus var på identitet, storytelling og interaktiv formidling.",
+  "tags": ["Branding", "UI", "JS", "Design"],
+  "image": "src/assets/BEDRBEER/BB1.png",
+  "gallery": [
+    "src/assets/BEDRBEER/3DMODEL1.png",
+    "src/assets/BEDRBEER/3DMODEL2.png",
+    "src/assets/BEDRBEER/BB1.png",
+    "src/assets/BEDRBEER/BB2.png",
+    "src/assets/BEDRBEER/BB3.png",
+    "src/assets/BEDRBEER/BB4.png",
+    "src/assets/BEDRBEER/BB5.png",
+    "src/assets/BEDRBEER/BB6.png",
+    "src/assets/BEDRBEER/BB7.png",
+    "src/assets/BEDRBEER/BB8.png",
+    "src/assets/BEDRBEER/BB9.png",
+    "src/assets/BEDRBEER/BB10.png",
+    "src/assets/BEDRBEER/BB11.png",
+    "src/assets/BEDRBEER/BB12.png",
+    "src/assets/BEDRBEER/BB13.png",
+    "src/assets/BEDRBEER/BB14.png",
+    "src/assets/BEDRBEER/BB15.png",
+    "src/assets/BEDRBEER/BB16.png"
+  ],
+  "client": "BEDR BEER (konceptbrand)",
+  "mandate": "Skabe identitet, website og interaktiv formidling.",
+  "approach": "Designsystem, storytelling, prototyper i React.",
+  "results": "En konsistent identitet og interaktiv case med responsivt website.",
+  "meta": {
+    "location": "Aarhus, DK",
+    "services": ["Branding", "UI/UX", "Frontend"],
+    "credits": ["Font: Inter", "Fotos: Eget materiale"]
   },
+  "links": [
+    {
+      "url": "https://sofienholm.github.io/BEDR_BEER/",
+      "text": "Se projekt live"
+    }
+  ]
+}
+
   {
     "id": 2,
     

@@ -1,0 +1,96 @@
+:root{
+  --ink:#514944; --rose:#efd3e3; --lemon:#fffabd; --mint:#d6edeb;
+  --taupe:#7c716b; --blush:#f2e9e6; --bg:#fffdf9; --radius:18px;
+}
+
+.case{
+  background:var(--bg);
+  color:var(--ink);
+}
+
+/* HERO */
+.hero{
+  max-width:min(1100px, 92vw);
+  margin: clamp(2rem,6vw,5rem) auto 1.5rem;
+}
+.title{
+  font-weight:800; text-transform:uppercase; letter-spacing:.04em;
+  font-size: clamp(2rem,5vw,3.6rem); margin:0 0 .2rem;
+}
+.tags{ display:flex; flex-wrap:wrap; gap:.5rem .6rem; align-items:center; }
+.tag{
+  font-size:.85rem; padding:.28rem .6rem; border-radius:999px;
+  border:1px solid color-mix(in oklab, var(--ink) 18%, #fff);
+  background: color-mix(in oklab, var(--blush) 35%, #fff);
+}
+.year{ font-size:.95rem; opacity:.7; margin-left:.25rem; }
+.lead{ margin:.6rem 0 0; line-height:1.6; max-width:65ch; }
+.links{ margin-top:1rem; display:flex; gap:.6rem; }
+.cta{
+  text-decoration:none; font-weight:600; color:#fff;
+  background:var(--ink); border:1.5px solid var(--ink);
+  padding:.6rem .9rem; border-radius:999px;
+}
+
+/* fuldbredde billedblok */
+.fullBleed{
+  width:100%; overflow:hidden; margin: clamp(1.2rem, 3vw, 2rem) 0;
+}
+.fullBleed img{ width:100%; height:auto; display:block; }
+
+/* 4-boks sektion */
+.gridFour{
+  max-width:min(1100px, 92vw);
+  margin: clamp(1.6rem, 5vw, 3rem) auto;
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: clamp(1rem, 2.6vw, 2rem);
+}
+.gridFour h3{
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  text-transform:uppercase; letter-spacing:.04em; margin:0 0 .3rem;
+}
+.gridFour p{ margin:0; line-height:1.6; }
+
+/* Meta-panel som hos Rümker (Additional info / Credits) */
+.meta{
+  max-width:min(1100px, 92vw);
+  margin: clamp(1.6rem, 5vw, 4rem) auto clamp(2.5rem,6vw,5rem);
+  padding: clamp(1rem, 2.4vw, 1.4rem);
+  border:1px solid color-mix(in oklab, var(--ink) 12%, #fff);
+  border-radius: var(--radius);
+  background:#fff;
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: clamp(1rem, 2.6vw, 2rem);
+}
+.meta h4{
+  margin:.1rem 0 .35rem; font-size:1rem; text-transform:uppercase; letter-spacing:.04em;
+}
+.meta ul{ margin:.2rem 0 0; padding-left:1.1rem; }
+
+.credits ul{ list-style: disc; }
+
+/* bundnav */
+.bottomNav{
+  max-width:min(1100px, 92vw);
+  margin: 0 auto clamp(2rem,6vw,5rem);
+}
+.backLink{
+  text-decoration:none; font-weight:600; color:var(--ink);
+  border:1.5px solid var(--ink); padding:.55rem .85rem; border-radius:999px;
+}
+
+/* GSAP hooks */
+.reveal{ will-change: transform, opacity; }
+.parallax{ overflow: hidden; }
+
+/* Responsiv */
+@media (max-width: 960px){
+  .gridFour{ grid-template-columns: 1fr 1fr; }
+  .meta{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px){
+  .gridFour, .meta{ grid-template-columns: 1fr; }
+  .title{ letter-spacing:.03em; }
+}

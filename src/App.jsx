@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
 import BurgerMenu from "./Components/BurgerMenu.jsx"; // vi bruger samme filnavn som før
 
+
 function App() {
   return (
     <div id="outer-container">
