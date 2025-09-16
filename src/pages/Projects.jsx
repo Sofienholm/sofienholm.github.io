@@ -28,12 +28,12 @@ export default function Projects() {
       <Swiper
         modules={[EffectFade, Mousewheel, Pagination]}
         effect="fade"
-        speed={1200}
+        speed={1000}
         loop={false}
-        // VIGTIGT: ingen forceToAxis → vertikal scroll styrer nu horisontal swiper
+        freeMode={{ enabled: true, sticky: true, momentumRatio: 0.7 }}
         mousewheel={{
           releaseOnEdges: true,
-          thresholdDelta: 20,
+          thresholdDelta: 40,
           sensitivity: 1,
         }}
         pagination={{ clickable: true }}
