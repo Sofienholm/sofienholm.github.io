@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
 
-
+const _motion = motion; // Ensure motion is marked as used for JSX member expressions.
 const easing = { type: "spring", stiffness: 90, damping: 16 };
 const fadeUp = {
   initial: { opacity: 0, y: 18 },

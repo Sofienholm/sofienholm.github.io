@@ -42,26 +42,25 @@
 /* “panel” = ét projektkort */
 .panel {
   flex: 0 0 auto;
-  width: min(72vw, 820px); /* store billeder som på forsiden */
+  width: min(72vw, 820px);           /* store billeder som på forsiden */
   max-width: 920px;
   border-radius: var(--radius, 18px);
   border: 1px solid color-mix(in oklab, var(--ink, #514944) 12%, transparent);
   background: #fff;
   /* Meget lav elevation – matcher dit luftige look */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.035);
   overflow: clip;
-  transition: transform 0.28s ease, box-shadow 0.28s ease,
-    border-color 0.28s ease;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
 }
 
 .panel:hover {
   transform: translateY(-4px);
   border-color: color-mix(in oklab, var(--rose, #efd3e3) 40%, #fff);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.07);
 }
 
 .media {
-  aspect-ratio: 16/10; /* ens højde som dine store previews */
+  aspect-ratio: 16/10;              /* ens højde som dine store previews */
   width: 100%;
   object-fit: cover;
   display: block;
@@ -74,8 +73,8 @@
 .titleRow {
   display: flex;
   align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 0.35rem;
+  gap: .75rem;
+  margin-bottom: .35rem;
 }
 
 .title {
@@ -89,12 +88,12 @@
 }
 
 .year {
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: color-mix(in oklab, var(--ink, #514944) 55%, #fff);
 }
 
 .desc {
-  margin: 0.25rem 0 0.75rem;
+  margin: .25rem 0 .75rem;
   color: color-mix(in oklab, var(--ink, #514944) 70%, #fff);
   line-height: 1.5;
 }
@@ -102,13 +101,13 @@
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 0.6rem;
-  margin-bottom: 0.9rem;
+  gap: .5rem .6rem;
+  margin-bottom: .9rem;
 }
 
 .tag {
-  font-size: 0.82rem;
-  padding: 0.32rem 0.6rem;
+  font-size: .82rem;
+  padding: .32rem .6rem;
   border-radius: 999px;
   border: 1px solid color-mix(in oklab, var(--ink, #514944) 16%, #fff);
   background: color-mix(in oklab, var(--blush, #f2e9e6) 35%, #fff);
@@ -120,10 +119,9 @@
   text-decoration: none;
   color: var(--ink, #514944);
   border: 1.5px solid var(--ink, #514944);
-  padding: 0.55rem 0.85rem;
+  padding: .55rem .85rem;
   border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease,
-    border-color 0.2s ease;
+  transition: background .2s ease, color .2s ease, transform .2s ease, border-color .2s ease;
 }
 
 .link:hover {
@@ -135,21 +133,11 @@
 
 /* responsiv finpudsning */
 @media (max-width: 900px) {
-  .panel {
-    width: 84vw;
-  }
+  .panel { width: 84vw; }
 }
 
 @media (max-width: 640px) {
-  .headline {
-    margin-inline: 1rem;
-  }
-  .wrapper {
-    padding-inline: 1rem;
-    gap: 20px;
-  }
-  .panel {
-    width: 88vw;
-    border-radius: 14px;
-  }
+  .headline { margin-inline: 1rem; }
+  .wrapper { padding-inline: 1rem; gap: 20px; }
+  .panel { width: 88vw; border-radius: 14px; }
 }
