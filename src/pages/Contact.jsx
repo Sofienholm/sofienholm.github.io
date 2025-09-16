@@ -14,16 +14,16 @@ const fadeUp = {
 
 export default function Contact() {
   return (
-    <main className="contact-page">
+    <main className={styles.contactPage}>
       {/* HERO */}
-      <section className="typo-hero container">
-        <p className="kicker">contact</p>
-        <motion.h1 className="big" {...fadeUp}>
+      <section className={`${styles.typoHero} ${styles.container}`}>
+        <p className={styles.kicker}>contact</p>
+        <motion.h1 className={styles.big} {...fadeUp}>
           Lad os skabe noget
           <br /> sammen
         </motion.h1>
         <motion.p
-          className="sub"
+          className={styles.sub}
           {...fadeUp}
           transition={{ delay: 0.05, ...easing }}
         >
@@ -32,18 +32,18 @@ export default function Contact() {
       </section>
 
       {/* INTRO */}
-      <section className="contact-intro container">
-        <motion.p className="lead" {...fadeUp}>
+      <section className={`${styles.contactIntro} ${styles.container}`}>
+        <motion.p className={styles.lead} {...fadeUp}>
           Jeg er altid åben for nye projekter, sparring eller bare en snak om
           design og frontend. Du kan fange mig her:
         </motion.p>
       </section>
 
       {/* CTA LINKS */}
-      <section className="contact-links container">
+      <section className={`${styles.contactLinks} ${styles.container}`}>
         <motion.a
           href="mailto:mail@ditdomæne.dk"
-          className="btn solid"
+          className={`${styles.btn} ${styles.btnSolid}`}
           {...fadeUp}
         >
           ✉️ mail@ditdomæne.dk
@@ -52,7 +52,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/dinprofil"
           target="_blank"
           rel="noreferrer"
-          className="btn ghost"
+          className={`${styles.btn} ${styles.btnGhost}`}
           {...fadeUp}
           transition={{ delay: 0.1, ...easing }}
         >
