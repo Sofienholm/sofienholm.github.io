@@ -1,11 +1,6 @@
 /* Scoped vars og utilities KUN inde i about-siden */
 .about {
-  --ink: #514944;
-  --rose: #efd3e3;
-  --lemon: #fffabd;
-  --mint: #d6edeb;
-  --taupe: #7c716b;
-  --blush: #f2e9e6;
+
   --radius: 18px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --maxw: 1100px;

@@ -14,7 +14,7 @@
   z-index: 3000;
 }
 
-.hamburger .bar {
+.bar {
   width: 100%;
   height: 4px;
   background: #514944; /* lukket farve */
@@ -28,23 +28,34 @@
 }
 
 /* Når menuen er åben (X-ikon), beholder stregerne hover-farven */
-.hamburger.is-open .bar {
+.hamburger.hamburgerOpen .bar {
   background: #7c716b; /* fastholder hover-farven indtil lukket */
 }
 
 /* Morphing til X når menu er åben */
-.hamburger.is-open .bar:nth-child(1) {
+.hamburger.hamburgerOpen .bar:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
 }
-.hamburger.is-open .bar:nth-child(2) {
+.hamburger.hamburgerOpen .bar:nth-child(2) {
   opacity: 0;
 }
-.hamburger.is-open .bar:nth-child(3) {
+.hamburger.hamburgerOpen .bar:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
 }
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  display: block;
+  text-decoration: none;
+}
+
 /* --- Styles fra react-burger-menu / GitHub --- */
 
-.bm-burger-button {
+:global(.bm-burger-button) {
   /* Hvis du bruger lib’ens burger-button (måske ikke hvis du bruger din egen knap) */
   position: fixed;
   right: 36px; /* højre side */
@@ -54,15 +65,15 @@
   height: 30px;
 }
 
-.bm-burger-bars {
+:global(.bm-burger-bars) {
   background: #514944;
 }
 
-.bm-burger-bars-hover {
+:global(.bm-burger-bars-hover) {
   background: #514944;
 }
 
-.bm-cross-button {
+:global(.bm-cross-button) {
   height: 24px;
   width: 24px;
   right: 36px;
@@ -72,12 +83,12 @@
   color: antiquewhite;
 }
 
-.bm-cross {
+:global(.bm-cross) {
   background: #efd3e3;
 }
 
 /* Menu wrapper der indeholder sidebar */
-.bm-menu-wrap {
+:global(.bm-menu-wrap) {
   position: fixed;
   height: 100%;
   /* når den åbner fra højre, lib’en håndterer trafikken hvis du har prop right */
@@ -87,19 +98,19 @@
 }
 
 /* Selve menuen baggrund, padding etc */
-.bm-menu {
+:global(.bm-menu) {
   background: #514944;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morphen (bruges med elastic) */
-.bm-morph-shape {
+:global(.bm-morph-shape) {
   fill: #514944;
 }
 
 /* Liste af items i menuen */
-.bm-item-list {
+:global(.bm-item-list) {
   color: #efd3e3;
   padding: 0.8em;
   display: flex;
@@ -107,7 +118,7 @@
 }
 
 /* Individuelle items */
-.bm-item {
+:global(.bm-item) {
   display: block;
   text-decoration: none;
   margin: 0.5em 0;
@@ -115,11 +126,11 @@
   transition: color 0.2s ease;
 }
 
-.bm-item:hover {
+:global(.bm-item:hover) {
   color: #ffffff;
 }
 
 /* Overlay når menuen er åben */
-.bm-overlay {
+:global(.bm-overlay) {
   background: #514944;
 }

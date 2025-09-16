@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillsSection.css";
+import styles from "./SkillsSection.module.css";
 
 const skills = [
   { icon: "x", title: "HTML", meta: "Semantic · Structure" },
@@ -10,21 +10,21 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className="skills-section">
-      <div className="skills-header">
+    <section className={styles.skillsSection}>
+      <div className={styles.skillsHeader}>
         <div>
-          <p className="kicker">Capabilities</p>
+          <p className={styles.kicker}>Capabilities</p>
           <h2>Skills</h2>
         </div>
-        <div className="muted">Tools & frameworks I use</div>
+        <div className={styles.muted}>Tools & frameworks I use</div>
       </div>
 
-      <div className="skills-grid">
+      <div className={styles.skillsGrid}>
         {skills.map((s) => (
-          <div key={s.title} className="skill-card">
-            <div className="skill-icon">{s.icon}</div>
+          <div key={s.title} className={styles.skillCard}>
+            <div className={styles.skillIcon}>{s.icon}</div>
             <h5>{s.title}</h5>
-            <p className="muted">{s.meta}</p>
+            <p className={styles.muted}>{s.meta}</p>
           </div>
         ))}
       </div>

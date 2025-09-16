@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
-import "./ProjectShowcase.css";
+import styles from "./ProjectShowcase.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,20 +93,20 @@ export default function ProjectShowcase({
     );
   }, []);
 
-  return (
-    <section className="project-showcase">
-      <h1 className="project-title">{title}</h1>
-      <div className="hero-image" ref={heroRef}>
+ return (
+    <section className={styles.projectShowcase}>
+      <h1 className={styles.projectTitle}>{title}</h1>
+      <div className={styles.heroImage} ref={heroRef}>
         <img src={heroImg} alt={title} />
       </div>
-      <p className="intro-tekst" ref={introRef}>
+      <p className={styles.introText} ref={introRef}>
         {introText}
       </p>
 
-      <div className="gallery">
+      <div className={styles.gallery}>
         {gallery.map((img, i) => (
           <div
-            className="gallery-item"
+            className={styles.galleryItem}
             key={i}
             ref={(el) => (galleryRefs.current[i] = el)}
           >
@@ -115,9 +115,10 @@ export default function ProjectShowcase({
         ))}
       </div>
 
-      <p className="outro-text" ref={outroRef}>
+      <p className={styles.outroText} ref={outroRef}>
         {outroText}
       </p>
     </section>
   );
 }
+

@@ -1,8 +1,7 @@
-// src/Components/NavLink.jsx
 import React, { useState } from "react";
 import { elastic as Menu } from "react-burger-menu";
 import { NavLink } from "react-router";
-import "./BurgerMenu.css"; // styles til knap + menu
+import styles from "./BurgerMenu.module.css"; // styles til knap + menu
 
 export default function BurgerMenu() {
   const [open, setOpen] = useState(false);
@@ -15,15 +14,17 @@ export default function BurgerMenu() {
     <>
       {/* Egen burger/X-knap */}
       <button
-        className={`hamburger ${open ? "is-open" : ""}`}
+        className={[styles.hamburger, open ? styles.hamburgerOpen : null]
+          .filter(Boolean)
+          .join(" ")}
         aria-label="Menu"
         aria-controls="main-navigation"
         aria-expanded={open}
         onClick={toggle}
       >
-        <span className="bar" />
-        <span className="bar" />
-        <span className="bar" />
+        <span className={styles.bar} />
+        <span className={styles.bar} />
+        <span className={styles.bar} />
       </button>
 
       {/* Selve burgermenuen (elastic, venstre som default) */}
@@ -36,18 +37,18 @@ export default function BurgerMenu() {
         customBurgerIcon={false}
         customCrossIcon={false}
         width={260}
-        itemListClassName="menu-list"
+        itemListClassName={styles.menuList}
       >
-        <NavLink to="/" end className="menu-item" onClick={close}>
+        <NavLink to="/" end className={styles.menuItem} onClick={close}>
           Home
         </NavLink>
-        <NavLink to="/projects" className="menu-item" onClick={close}>
+        <NavLink to="/projects" className={styles.menuItem} onClick={close}>
           Projects
         </NavLink>
-        <NavLink to="/about" className="menu-item" onClick={close}>
+        <NavLink to="/about" className={styles.menuItem} onClick={close}>
           About
         </NavLink>
-        <NavLink to="/contact" className="menu-item" onClick={close}>
+        <NavLink to="/contact" className={styles.menuItem} onClick={close}>
           Contact
         </NavLink>
       </Menu>

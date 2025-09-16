@@ -1,26 +1,26 @@
-.project-showcase {
+.projectShowcase {
   padding: 6rem 2rem;
   background: #f5f5f0;
   color: #3a3a38;
   margin-top: -12rem;
 }
 
-.project-title {
+.projectTitle {
   font-size: 8rem;
   font-weight: 900;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
-.hero-image img {
+.heroImage img {
   width: 100%;
   max-height: 600px;
   object-fit: cover;
   margin-bottom: 2rem;
 }
 
-.intro-tekst,
-.outro-text {
+.introText,
+.outroText {
   max-width: 700px;
   margin: 2rem auto;
   font-size: 1.4rem;
@@ -34,19 +34,19 @@
   margin: 3rem 0;
 }
 
-.gallery-item {
+.galleryItem {
   flex: 1 1 calc(25% - 1rem);
   overflow: hidden;
 }
 
-.gallery-item img {
+.galleryItem img {
   width: 100%;
   height: auto;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: filter 0.3s ease; 
+  transition: filter 0.3s ease;
 }
 
-.gallery-item img:hover {
+.galleryItem img:hover {
   filter: grayscale(0%);
 }

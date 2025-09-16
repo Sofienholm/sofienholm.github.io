@@ -11,14 +11,14 @@
 .container{max-width:var(--maxw); margin-inline:auto; padding:4rem 1rem;}
 .kicker{letter-spacing:.18em; text-transform:uppercase; font-size:.75rem; color:var(--taupe); margin:0 0 .5rem;}
 
-.typo-hero{position:relative; isolation:isolate; text-align:center;}
-.typo-hero::before{
+.typoHero{position:relative; isolation:isolate; text-align:center;}
+.typoHero::before{
   content:"CONTACT"; position:absolute; inset:auto auto 8% 0;
   font-size: clamp(6rem, 18vw, 16rem);
   line-height:.8; letter-spacing:-.02em; color:var(--ink);
   opacity:.05; z-index:-1; user-select:none; pointer-events:none;
 }
-.typo-hero .big{
+.typoHero .big{
   font-size: var(--h1);
   line-height:.92; margin:0 0 .6rem;
 }

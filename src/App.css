@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+   --ink: #514944;
+  --rose: #efd3e3;
+  --lemon: #fffabd;
+  --mint: #d6edeb;
+  --taupe: #7c716b;
+  --blush: #f2e9e6;
 }
 
 .logo {

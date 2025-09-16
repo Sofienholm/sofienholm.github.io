@@ -1,7 +1,8 @@
 // src/pages/Contact.jsx
 import React from "react";
+import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
-import "./Contact.css";
+
 
 const easing = { type: "spring", stiffness: 90, damping: 16 };
 const fadeUp = {
