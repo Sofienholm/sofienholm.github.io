@@ -5,10 +5,10 @@ import beer1 from "../assets/BEDRBEER/BB1.png";
 import beer2 from "../assets/BEDRBEER/BB2.png";
 import beer3 from "../assets/BEDRBEER/BB3.png";
 import beer4 from "../assets/BEDRBEER/BB4.png";
-import pla1 from "../assets/Plakaten/poster1.png";
-import pla2 from "../assets/Plakaten/poster2.png";
-import pla3 from "../assets/Plakaten/poster3.jpg";
-import pla4 from "../assets/Plakaten/poster4.png";
+import pla1 from "../assets/PLAKATEN/poster1.png";
+import pla2 from "../assets/PLAKATEN/poster2.png";
+import pla3 from "../assets/PLAKATEN/poster3.jpg";
+import pla4 from "../assets/PLAKATEN/poster4.png";
 
 import "../styles/global.css";
 
@@ -27,7 +27,7 @@ export default function Home() {
       />
 
       <ProjectShowcase
-        title="Plakaten"
+        title="PLAKATEN"
         heroImg={pla1}
         introText="Et responsivt plakatprojekt..."
         gallery={[
