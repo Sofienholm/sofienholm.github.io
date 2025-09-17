@@ -31,17 +31,16 @@ export default function Hero() {
       {/* TITEL: starter ~52vh og glider op til ~12vh */}
       <motion.h1
         className={styles.title}
-         initial={{ opacity: 0, top: "40vh" }}
-         animate={{ opacity: 1, top: "12vh" }}
-         transition={{
+        initial={{ opacity: 0, top: "40vh" }}
+        animate={{ opacity: 1, top: "12vh" }}
+        transition={{
           ease,
           duration: 1.2,
           delay: 0.25,
           opacity: { duration: 0.6, delay: 0.25 }, // fade ind først
-          top: { duration: 0.8, delay: 0.5 }       // bevæg op bagefter
-  }}
+          top: { duration: 0.8, delay: 0.5 }, // bevæg op bagefter
+        }}
       >
-        
         Sofie Neergaard
       </motion.h1>
 
@@ -95,12 +94,20 @@ export default function Hero() {
 
       {/* Tekster nederst */}
       <div className={styles.texts}>
-        <p className={styles.year}>PORTFOLIO 2025</p>
+        <motion.p
+          className={styles.year}
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1.7, ease }}
+        >
+          PORTFOLIO 2025
+        </motion.p>
+
         <motion.p
           className={styles.scroll}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.4, ease }}
+          transition={{ duration: 0.7, delay: 1.9, ease }}
         >
           Scroll ned og se, hvad jeg kan
         </motion.p>

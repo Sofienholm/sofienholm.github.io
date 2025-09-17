@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <section className={styles.introSection}>
       <div className={styles.introText}>
-        <h2>Welcome to My Portfolio</h2>
+        <h2>Velkommen til</h2>
         <p>
           Jeg er multimediedesign-studerende med en passion for frontend og et
           kreativt øje for design. Jeg elsker at kombinere struktur og æstetik i
