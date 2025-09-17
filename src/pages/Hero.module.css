@@ -1,117 +1,77 @@
+/* Container */
 .hero {
-  --duration1: 2.5s;
-  --duration2: calc(var(--duration1) / 2);
-  --delay1: calc(var(--duration2) / 2);
-  --delay2: calc(var(--duration2) + var(--delay1));
-  --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 90vh;
-  overflow: hidden;
-  padding: 2rem 1rem;
-}
-
-.title {
-  font-family: "beth-ellen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: clamp(2.2rem, 8vw, 6rem);
-  margin: 1rem 0 2rem;
-  color: #514944;
-
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
-}
-
-.heroInner {
-  width: 100%;
-  max-width: 80rem;
+  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 1rem;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 0.3rem;
-
-  opacity: 0;
-  transform: translateY(100%);
-  animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
-}
-
-.textBlock {
-  margin-top: 2rem;
+  min-height: 90vh;
+  padding: 2rem 1rem 6rem;
+  position: relative;
   text-align: center;
 }
 
-.year,
-.scroll {
-  font-family: "poppins", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-style: normal;
-  opacity: 0;
-  transform: translateY(1rem);
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: calc(var(--delay2) + 1.2s);
-  margin: 0.2rem 0;
+/* Titel – Phudu Variable, blå, absolut så den kan overlappe portrættet */
+.title {
+  position: absolute;
+  left: clamp(1rem, 6vw, 8rem); /* lidt ind fra venstre, som i dit mockup */
+  z-index: 5;                   /* over billederne */
+  font-family: "phudu-variable", sans-serif;
+  font-variation-settings: "wght" 700;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #45b6ff;
+  line-height: 1.3;
+  font-size: clamp(2.2rem, 6vw, 6rem);
+  margin: 0;
 }
 
+/* Grid: mobil = 2x2 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  width: min(100%, 900px);
+}
+
+/* Billeder – fælles stil (entrance styres af Motion) */
+.card {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* Tablet/Desktop collage */
 @media (min-width: 700px) {
-  .year,
-  .scroll {
-    font-size: 1.5rem;
+  .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(7, 8vw);
+    gap: 1.25rem;
+    width: 100%;
   }
+
+  /* Pladser justeret så titlen kan overlappe portrættets top lidt */
+  .portrait { grid-area: 1 / 3 / 7 / 6; aspect-ratio: 3 / 4; }
+  .topRight { grid-area: 2 / 9 / 6 / 11; aspect-ratio: 4 / 4; }
+  .midRight { grid-area: 3 / 6 / 5 / 8;  aspect-ratio: 4 / 6; }
+.bottom { grid-area: 3 / 7 / 6 / 9;  aspect-ratio: 2 / 3;   transform: translateX(30%);   width: 90%;           /* lidt mindre end cellen */
+  justify-self: center;  margin-left: 6rem; margin-top: 5rem; }
 }
 
+/* Desktop rækker lidt lavere (samme komposition) */
 @media (min-width: 1200px) {
-  .year,
-  .scroll {
-    font-size: 2rem;
-  }
+  .grid { grid-template-rows: repeat(7, 6.5rem); }
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Tekster nederst */
+.texts { margin-top: clamp(1rem, 4vw, 3rem); }
+.year, .scroll {
+  font-family: "poppins", sans-serif;
+  margin: .25rem 0;
+  color: #1f1f1f;
 }
-
-@keyframes loadH1 {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  30%,
-  50% {
-    opacity: 1;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes loadImg {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
+.year  { font-size: clamp(1rem, 2.2vw, 2rem); color: #45b6ff; font-weight: 700; }
+.scroll{ font-size: clamp(1rem, 2vw, 1.6rem); color: #222; }

@@ -5,7 +5,6 @@ import beer1 from "../assets/BEDRBEER/BB1.png";
 import beer2 from "../assets/BEDRBEER/BB2.png";
 import beer3 from "../assets/BEDRBEER/BB3.png";
 
-
 export default function Home() {
   return (
     <div>
