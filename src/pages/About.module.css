@@ -1,177 +1,84 @@
-/* Scoped vars og utilities KUN inde i about-siden */
 .about {
-
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --maxw: 1100px;
+  background: var(--bg);
 }
 
-/* Utility inde i modulet */
-.container {
-  max-width: var(--maxw);
+/* layout */
+.wrap {
+  max-width: 1100px;
   margin-inline: auto;
-  padding: 4rem 1rem;
-}
-.visuallyHidden {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  padding: 5rem 1rem;
+  position: relative;
 }
 
-/* Knapper */
-.kicker {
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  color: var(--taupe);
-  margin: 0 0 0.5rem;
+.title {
+  font-family: "phudu-variable", sans-serif;
+  margin: 0;
+  font-weight: 700;
+  line-height: 0.9;
+  font-size: clamp(64px, 16vw, 220px);
+  color: var(--sky, #47b8ff);
+  position: relative;
+  left: -5rem;
+  z-index: 5;
 }
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1rem;
-  border-radius: 10px;
-  border: 1px solid var(--ink);
-  text-decoration: none;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: center;
+  justify-items: center;
+  margin-top: -3rem;
 }
-.btnSolid {
-  background: var(--ink);
-  color: #fff;
+
+/* media */
+.photo {
+  width: 70%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  filter: grayscale(100%);
+  background: var(--blush);
 }
-.btnGhost {
+
+.copy {
   color: var(--ink);
-  background: transparent;
 }
-.btn:hover {
+
+.copy p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  max-width: 46ch;
+}
+
+.links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.2s ease;
+}
+.link:hover {
   transform: translateY(-1px);
 }
 
-/* TYPO HERO */
-.typoHero {
-  position: relative;
-  isolation: isolate;
-}
-.typoHero::before {
-  content: "Om mig";
-  position: absolute;
-  inset: auto auto 48% 0;
-  font-size: clamp(6rem, 18vw, 19rem);
-  line-height: 0.8;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  opacity: 0.09;
-  z-index: -1;
-  user-select: none;
-  pointer-events: none;
-   font-family: "beth-ellen", sans-serif;
-
-}
-.big {
-  font-size: clamp(2.4rem, 6vw, 4.6rem);
-  line-height: 0.92;
-  letter-spacing: -0.01em;
-  margin: 0 0 0.6rem;
-  text-wrap: balance;
-}
-.amp {
-  color: var(--taupe);
-}
-.sub {
-  color: #6b645f;
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
-}
-
-/* INTRO SPLIT */
-.intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-.introImg {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  object-fit: cover;
-  aspect-ratio: 3/4;
-  background: linear-gradient(180deg, var(--blush), transparent);
-}
-.introCopy h2 {
-  margin: 0.25rem 0 1rem;
-  font-size: clamp(1.4rem, 3.2vw, 2rem);
-}
-.introCopy p {
-  color: #5b544f;
-}
-.ctaRow {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-/* STATS */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  border-top: 1px solid #e4dcd7;
-  border-bottom: 1px solid #e4dcd7;
-  padding: 2rem 0;
-  background: linear-gradient(180deg, #fff 0%, #fff 60%, var(--blush) 220%);
-}
-.stat {
-  background: white;
-  border-radius: 12px;
-  padding: 1.25rem;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
-.statNum {
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  font-weight: 800;
-}
-.statLabel {
-  color: #6b635e;
-}
-
-/* SKILLS wrapper */
-.skills {
-  padding-top: 1rem;
-}
-
-/* QUOTE */
-.quote blockquote {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  border-left: 6px solid var(--mint);
-  padding-left: 1rem;
-  margin: 0;
-  color: #4b4540;
-  background: linear-gradient(
-    90deg,
-    rgba(214, 237, 235, 0.35),
-    transparent 60%
-  );
-  border-radius: 8px;
-}
-
-/* CTA */
-.contact {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Responsive */
+/* responsive */
 @media (max-width: 900px) {
-  .intro {
+  .grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
-  .stats {
-    grid-template-columns: 1fr;
-    text-align: left;
+  .title {
+    transform: translateY(-10%);
+  }
+  .copy p {
+    max-width: 60ch;
   }
 }
