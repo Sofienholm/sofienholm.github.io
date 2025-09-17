@@ -78,20 +78,23 @@ export default function ProjectDetail() {
       )}
 
       {/* FEATURES — understøtter nu kode + 3D-model */}
+
       {features.map((f, i) => (
         <section key={i} className={styles.feature}>
-          {f.title && <h3>{f.title}</h3>}
+          {f.title && (
+            <div className={styles.titleRow}>
+              <h3>{f.title}</h3>
+              <span className={styles.rule} />
+            </div>
+          )}
           <div className={styles.featureText}>
             {f.text && <p>{f.text}</p>}
-            {/* kode som tekst */}
             {f.code && (
               <pre className={styles.codeBubble}>
                 <code>{f.code}</code>
               </pre>
             )}
           </div>
-
-          {/* højre: visual-komposition */}
           <div className={styles.featureVisual}>
             {/* kode som billede */}
             {f.codeImg && (
@@ -130,9 +133,13 @@ export default function ProjectDetail() {
         </section>
       ))}
 
-      {stack.length || illustrations.length ? (
+      {/* STACK */}
+      {(stack.length || illustrations.length) && (
         <section className={styles.stack}>
-          <h3>Anvendte teknologier & værktøjer</h3>
+          <div className={styles.titleRow}>
+            <h3>Anvendte teknologier & værktøjer</h3>
+            <span className={styles.rule} />
+          </div>
           {!!stack.length && (
             <ul className={styles.chips}>
               {stack.map((x) => (
@@ -148,16 +155,22 @@ export default function ProjectDetail() {
             </div>
           )}
         </section>
-      ) : null}
+      )}
 
       {!!rest.length && (
-        
         <section className={styles.gallery}>
-          <h3>Flere billeder</h3>
+          <div className={styles.titleRow}>
+            <h3>Flere billeder</h3>
+            <span className={styles.rule} />
+          </div>
           <div className={styles.galleryGrid}>
-               {rest.map((g, i) => (
-            <img key={i} src={ensureAbs(g)} alt={`${project.title} ${i + 1}`} />
-          ))}
+            {rest.map((g, i) => (
+              <img
+                key={i}
+                src={ensureAbs(g)}
+                alt={`${project.title} ${i + 1}`}
+              />
+            ))}
           </div>
         </section>
       )}

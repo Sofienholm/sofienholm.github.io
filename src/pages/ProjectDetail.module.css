@@ -70,18 +70,9 @@ section {
 .featureText {
   display: flex;
   flex-direction: row;
-    gap: 2rem;
+  gap: 2rem;
 }
-.feature h3, .stack h3, .gallery h3{
-  margin: 0 0 1.2rem;
-  font-size: clamp(2rem, 3vw, 3rem);
-  letter-spacing: 0.02em;
-  line-height: 1;
-  color: var(--accent);
-  font-weight: 900;
-  text-transform: uppercase;
-  font-family: "phudu-variable", sans-serif;
-}
+
 .featureText p {
   margin: 0 0 0.8rem;
   line-height: 1.7;
@@ -128,9 +119,7 @@ section {
   width: 10rem;
   height: 15rem;
   rotate: 35deg;
-
 }
-
 
 .chips {
   list-style: none;
@@ -149,10 +138,26 @@ section {
   width: 4rem;
   height: 4rem;
 }
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.2rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--accent);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "phudu-variable", sans-serif;
+}
+
 .rule {
   height: 1px;
-  background: rgba(124, 113, 107, 0.6); /* svag taupe-linje */
+  flex: 1;
+  background: rgba(124, 113, 107, 0.6);
 }
+
 .illus {
   margin-top: 1rem;
   display: grid;
@@ -168,7 +173,7 @@ section {
 .gallery {
   margin-top: 10rem;
 }
-.galleryGrid{
+.galleryGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
