@@ -6,23 +6,23 @@
     "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "/assets/BEDRBEER/BB1.png",
-      "/assets/BEDRBEER/3DMODEL1.png",
-      "src/assets/BEDRBEER/BB2.png",
-      "src/assets/BEDRBEER/BB3.png",
-      "src/assets/BEDRBEER/BB4.png",
-      "src/assets/BEDRBEER/BB5.png",
-      "src/assets/BEDRBEER/BB6.png",
-      "src/assets/BEDRBEER/BB7.png",
-      "src/assets/BEDRBEER/BB8.png",
-      "src/assets/BEDRBEER/BB9.png",
-      "src/assets/BEDRBEER/BB10.png"
+      "assets/BEDRBEER/BB1.png",
+      "assets/BEDRBEER/3DMODEL1.png",
+      "assets/BEDRBEER/BB2.png",
+      "assets/BEDRBEER/BB3.png",
+      "assets/BEDRBEER/BB4.png",
+      "assets/BEDRBEER/BB5.png",
+      "assets/BEDRBEER/BB6.png",
+      "assets/BEDRBEER/BB7.png",
+      "assets/BEDRBEER/BB8.png",
+      "assets/BEDRBEER/BB9.png",
+      "assets/BEDRBEER/BB10.png"
     ],
     "feature": [
       {
         "title": "3D dåse",
         "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
-        "image": "src/assets/BEDRBEER/3DMODEL2.png",
+        "image": "/assets/BEDRBEER/3DMODEL2.png",
         "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
         "codeImg": "/assets/BEDRBEER/code-badge.png",
         "model": {
@@ -36,12 +36,12 @@
     "tech": ["React", "Vite"],
     "tools": ["Figma"],
     "illustrations": [
-      "src/assets/BEDRBEER/illu1.png",
-      "src/assets/BEDRBEER/illu2.png",
-      "src/assets/BEDRBEER/illu3.png",
-      "src/assets/BEDRBEER/illu4.png",
-      "src/assets/BEDRBEER/illu5.png",
-      "src/assets/BEDRBEER/illu6.png"
+      "/assets/BEDRBEER/illu1.png",
+      "/assets/BEDRBEER/illu2.png",
+      "/assets/BEDRBEER/illu3.png",
+      "/assets/BEDRBEER/illu4.png",
+      "/assets/BEDRBEER/illu5.png",
+      "/assets/BEDRBEER/illu6.png"
     ]
   },
 
@@ -52,7 +52,7 @@
     "year": 2025,
     "description": "En interaktiv udstilling til Steno Museet om menstruationscyklussen. Brugeren styrer flowet gennem en bold og oplever animationer og dataformidling.",
     "tags": ["UX", "Interaktiv", "Figma", "Frontend"],
-    "image": "src/assets/CILLE/cycle-1.jpg",
+    "image": "/assets/CILLE/cycle-1.jpg",
     "links": [{ "url": "#", "text": "Case coming soon" }]
   },
   {
@@ -61,7 +61,7 @@
     "year": 2025,
     "description": "Et grafisk designprojekt med fokus på responsivt layout, farver og logo-udvikling. Viser mine evner inden for grafisk design og visuel kommunikation.",
     "tags": ["Grafisk Design", "Illustrator", "Farveteori"],
-    "image": "src/assets/PLAKATEN/poster-1.jpg",
+    "image": "/assets/PLAKATEN/poster-1.jpg",
     "links": [{ "url": "#", "text": "Case coming soon" }]
   }
 ]
