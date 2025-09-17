@@ -2,29 +2,49 @@ import React from "react";
 import styles from "./SkillsSection.module.css";
 
 const skills = [
-  { icon: "x", title: "HTML", meta: "Semantic · Structure" },
-  { icon: "x", title: "CSS", meta: "Flexbox · Grid" },
-  { icon: "x", title: "JavaScript", meta: "ES6 · DOM" },
-  { icon: "x", title: "React", meta: "Hooks · SPA" },
+  { title: "HTML", meta: "Semantic • Structure" },
+  { title: "CSS", meta: "Flexbox • Grid" },
+  { title: "JS", meta: "ES6 • DOM" },
+  { title: "REACT", meta: "Hooks • SPA" },
+];
+
+const tools = [
+  { title: "VS Code", meta: "Kode • Debug" },
+  { title: "Git & GitHub", meta: "Branches • Deployment" },
+  { title: "Figma", meta: "Prototyper" },
+  { title: "Illustrator", meta: "Logo • Illustrationer • Vektorer" },
+  { title: "Photoshop", meta: "Billedretouch • Mockups" },
 ];
 
 export default function SkillsSection() {
   return (
-    <section className={styles.skillsSection}>
-      <div className={styles.skillsHeader}>
-        <div>
-          <p className={styles.kicker}>Capabilities</p>
-          <h2>Skills</h2>
-        </div>
-        <div className={styles.muted}>Tools & frameworks I use</div>
+    <section className={styles.wrap} aria-label="Skills og Tools">
+      {/* SKILLS */}
+      <div className={styles.titleRow}>
+        <h2 className={styles.heading}>SKILLS</h2>
+        <span className={styles.rule} />
       </div>
 
-      <div className={styles.skillsGrid}>
+      <div className={styles.skillsRow}>
         {skills.map((s) => (
-          <div key={s.title} className={styles.skillCard}>
-            <div className={styles.skillIcon}>{s.icon}</div>
-            <h5>{s.title}</h5>
-            <p className={styles.muted}>{s.meta}</p>
+          <div key={s.title} className={styles.card}>
+            <div className={styles.cardTitle}>{s.title}</div>
+            <div className={styles.cardMeta}>{s.meta}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* TOOLS */}
+      <div className={`${styles.titleRow} ${styles.toolsTop}`}>
+        <h2 className={styles.heading}>TOOLS</h2>
+        <span className={styles.rule} />
+      </div>
+
+      <div className={styles.toolsGrid}>
+        {tools.map((t) => (
+          <div key={t.title} className={styles.card}>
+            <div className={styles.cardTitle}>{t.title}</div>
+            <div className={styles.cardMeta}>{t.meta}</div>
           </div>
         ))}
       </div>

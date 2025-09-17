@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
 import imgPortrait2 from "../assets/portrait.jpg";
+import SkillsSection from "../Components/SkillsSection";
 
 const fade = {
   initial: { opacity: 0, y: 14 },
@@ -56,6 +57,7 @@ export default function About() {
           </motion.div>
         </div>
       </section>
+      <SkillsSection />
     </main>
   );
 }
