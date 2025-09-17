@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import imgBike from "../assets/bike.jpg";
-import imgPortrait from "../assets/portrait.jpg";
+import imgPortrait from "../assets/potrait.png";
 import imgNotebook from "../assets/notebook.jpg";
 import imgLaptop from "../assets/laptop.jpg";
 
