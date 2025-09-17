@@ -4,31 +4,38 @@ import ProjectShowcase from "../Components/ProjectShowcase";
 import beer1 from "../assets/BEDRBEER/BB1.png";
 import beer2 from "../assets/BEDRBEER/BB2.png";
 import beer3 from "../assets/BEDRBEER/BB3.png";
+import beer4 from "../assets/BEDRBEER/BB4.png";
+import pla1 from "../assets/Plakaten/poster1.png";
+import pla2 from "../assets/Plakaten/poster2.png";
+import pla3 from "../assets/Plakaten/poster3.jpg";
+import pla4 from "../assets/Plakaten/poster4.png";
+
+import "../styles/global.css";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Intro />
+      <h2 className="new">Nye Projekter</h2>
       <ProjectShowcase
         title="BEDR BEER"
         heroImg={beer1}
         introText="Et webprojekt om alkoholfri øl..."
-        gallery={[beer1, beer2, beer3]}
+        gallery={[beer4, beer2, beer3]}
         outroText="Projektet viste hvordan jeg arbejder med branding og interaktivt design..."
       />
 
       <ProjectShowcase
-        title="Plakat Projekt"
-        heroImg="/img/plakat-hero.png"
+        title="Plakaten"
+        heroImg={pla1}
         introText="Et responsivt plakatprojekt..."
         gallery={[
-          "/img/plakat-1.png",
-          "/img/plakat-2.png",
-          "/img/plakat-3.png",
+        pla2, pla3, pla4
         ]}
         outroText="Her eksperimenterede jeg med farver, logo og baggrundsvideo..."
       />
+
     </div>
   );
 }

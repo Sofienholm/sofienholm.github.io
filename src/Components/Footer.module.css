@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 6rem;
+  background: #f8f5f3; /* baggrundsfarve */
+  color: #7c716b; /* tekstfarve */
+}
+
+.left {
+  max-width: 70%;
+}
+
+.sub {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.mail {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #7c716b;
+}
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #7c716b;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.nav a:hover {
+  border-color: #7c716b;
+}

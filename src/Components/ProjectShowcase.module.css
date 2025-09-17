@@ -1,15 +1,18 @@
 .projectShowcase {
-  padding: 6rem 2rem;
-  background: #f5f5f0;
-  color: #3a3a38;
-  margin-top: -12rem;
+  padding: 12rem 0rem;
+  background: #E3DBD5;
+  color: #877D76;
+  margin-top: 0;
+
+  
 }
 
 .projectTitle {
-  font-size: 8rem;
+  font-size: 20rem;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin: 0 0 -7rem 0;
   text-transform: uppercase;
+    font-family: "phudu-variable", sans-serif;
 }
 
 .heroImage img {
@@ -31,7 +34,7 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin: 3rem 0;
+  
 }
 
 .galleryItem {

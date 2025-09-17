@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
 import BurgerMenu from "./Components/BurgerMenu.jsx"; // vi bruger samme filnavn som før
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   if ("scrollRestoration" in window.history) {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
