@@ -100,7 +100,7 @@
 /* Selve menuen baggrund, padding etc */
 :global(.bm-menu) {
   background: #514944;
-  padding: 2.5em 1.5em 0;
+  padding: 2.5em 1em 0;
   font-size: 1.15em;
 }
 
@@ -112,7 +112,7 @@
 /* Liste af items i menuen */
 :global(.bm-item-list) {
   color: #efd3e3;
-  padding: 0.8em;
+  
   display: flex;
   flex-direction: column;
 }
@@ -121,8 +121,14 @@
 :global(.bm-item) {
   display: block;
   text-decoration: none;
-  margin: 0.5em 0;
+;
   color: #efd3e3;
+   font-family: "phudu-variable", sans-serif;
+
+  font-weight: 600;
+  font-size: 2.9rem;
+
+  letter-spacing: -0.05em;
   transition: color 0.2s ease;
 }
 

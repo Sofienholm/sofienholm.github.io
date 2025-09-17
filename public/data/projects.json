@@ -3,7 +3,7 @@
   "id": 1,
   "title": "BEDR BEER",
   "year": 2025,
-  "description": "Et branding- og webprojekt om alkoholfri øl, hvor fokus var på identitet, storytelling og interaktiv formidling.",
+  "description": "Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
   "tags": ["Branding", "UI", "JS", "Design"],
   "image": "src/assets/BEDRBEER/BB1.png",
   "gallery": [
@@ -26,22 +26,19 @@
     "src/assets/BEDRBEER/BB15.png",
     "src/assets/BEDRBEER/BB16.png"
   ],
-  "client": "BEDR BEER (konceptbrand)",
-  "mandate": "Skabe identitet, website og interaktiv formidling.",
-  "approach": "Designsystem, storytelling, prototyper i React.",
-  "results": "En konsistent identitet og interaktiv case med responsivt website.",
-  "meta": {
-    "location": "Aarhus, DK",
-    "services": ["Branding", "UI/UX", "Frontend"],
-    "credits": ["Font: Inter", "Fotos: Eget materiale"]
+  "feature": {
+    "title": "3D dåse",
+    "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
+    "image": "/assets/BB/feature.png"
   },
-  "links": [
-    {
-      "url": "https://sofienholm.github.io/BEDR_BEER/",
-      "text": "Se projekt live"
-    }
+  "tech": ["React", "GSAP", "Vite"],
+  "tools": ["Figma", "Photoshop"],
+  "illustrations": [
+    "/assets/BB/illus-1.png",
+    "/assets/BB/illus-2.png"
   ]
 },
+
 
   {
     "id": 2,
