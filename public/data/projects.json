@@ -6,9 +6,9 @@
     "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "src/assets/BEDRBEER/BB1.png",
-      "src/assets/BEDRBEER/3DMODEL1.png",
-      "src/assets/BEDRBEER/BB2.png",
+      "/assets/BEDRBEER/BB1.png",
+      "/assets/BEDRBEER/3DMODEL1.png",
+      "/assets/BEDRBEER/BB2.png",
       "src/assets/BEDRBEER/BB3.png",
       "src/assets/BEDRBEER/BB4.png",
       "src/assets/BEDRBEER/BB5.png",
@@ -36,8 +36,8 @@
     "tech": ["React", "Vite"],
     "tools": ["Figma"],
     "illustrations": [
-      "src/assets/BEDRBEER/illu1.png",
-      "src/assets/BEDRBEER/illu2.png",
+      "/assets/BEDRBEER/illu1.png",
+      "/assets/BEDRBEER/illu2.png",
       "src/assets/BEDRBEER/illu3.png",
       "src/assets/BEDRBEER/illu4.png",
       "src/assets/BEDRBEER/illu5.png",
