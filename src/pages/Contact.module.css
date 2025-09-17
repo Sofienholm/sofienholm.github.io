@@ -1,39 +1,60 @@
-/* src/pages/Contact.css */
 :root{
-  --ink:#514944; --rose:#EFD3E3; --lemon:#FFFABD; --mint:#D6EDEB;
-  --taupe:#7C716B; --blush:#F2E9E6; --bg:#fffdf9;
-  --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.08);
-  --maxw:1100px;
-  --h1: clamp(2.4rem, 6vw, 4.6rem);
-  --lead: clamp(1rem, 1.6vw, 1.15rem);
+  --ink:#514944;
+  --taupe:#7c716b;
+  --blush:#F2E9E6;
+  --bg:#fffdf9;
 }
 
-.container{max-width:var(--maxw); margin-inline:auto; padding:4rem 1rem;}
-.kicker{letter-spacing:.18em; text-transform:uppercase; font-size:.75rem; color:var(--taupe); margin:0 0 .5rem;}
-
-.typoHero{position:relative; isolation:isolate; text-align:center;}
-.typoHero::before{
-  content:"CONTACT"; position:absolute; inset:auto auto 8% 0;
-  font-size: clamp(6rem, 18vw, 16rem);
-  line-height:.8; letter-spacing:-.02em; color:var(--ink);
-  opacity:.05; z-index:-1; user-select:none; pointer-events:none;
+.contact{
+  background: var(--blush);
+  min-height: 100dvh;
 }
-.typoHero .big{
-  font-size: var(--h1);
-  line-height:.92; margin:0 0 .6rem;
+.wrap{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: clamp(56px, 8vw, 120px) 6vw 0;
 }
-.typo-hero .sub{color:#6b645f; font-size:var(--lead);}
-
-.contact-intro{margin-top:2rem; text-align:center;}
-.contact-intro .lead{font-size:var(--lead); color:#5b544f;}
-
-.contact-links{display:flex; justify-content:center; gap:1.2rem; margin-top:2.5rem;}
-.btn{display:inline-block; padding:.9rem 1.4rem; border-radius:10px; border:1px solid var(--ink); text-decoration:none; font-size:1rem;}
-.btn.solid{background:var(--ink); color:#fff;}
-.btn.ghost{color:var(--ink); background:transparent;}
-.btn:hover{transform:translateY(-1px);}
-
-/* Responsive */
-@media (max-width:700px){
-  .contact-links{flex-direction:column;}
+.title{
+  font-family: "phudu-variable", sans-serif;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: #ffffff;
+  font-size: clamp(64px, 16vw, 220px);
+}
+.subtitle{
+  margin: clamp(6px, .8vw, 12px) 0 0;
+  font-style: italic;
+  color: var(--taupe);
+  font-weight: 500;
+  font-size: clamp(20px, 3.8vw, 44px);
+}
+.cta{
+  max-width: 1600px;
+  margin: clamp(48px, 10vw, 140px) auto 0;
+  padding: 0 6vw clamp(40px, 8vw, 120px);
+}
+.bigline{
+  text-align: center;
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: .005em;
+  line-height: 1.2;
+  font-size: clamp(22px, 3.8vw, 56px);
+  margin: 0;
+}
+.bigline a{
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.bigline a:hover{
+  border-bottom-color: var(--taupe);
+}
+@media (max-width: 640px){
+  .wrap{ padding-top: clamp(48px, 10vw, 72px); }
+  .title{ font-size: clamp(54px, 22vw, 120px); }
+  .subtitle{ font-size: clamp(18px, 5.5vw, 28px); }
 }

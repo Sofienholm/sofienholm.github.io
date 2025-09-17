@@ -1,63 +1,50 @@
-// src/pages/Contact.jsx
 import React from "react";
-import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
+import styles from "./Contact.module.css";
 
-const _motion = motion; // Ensure motion is marked as used for JSX member expressions.
-const easing = { type: "spring", stiffness: 90, damping: 16 };
-const fadeUp = {
-  initial: { opacity: 0, y: 18 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.2 },
-  transition: { ...easing },
-};
+const ease = { duration: 0.7, ease: [0.22, 1, 0.36, 1] };
 
 export default function Contact() {
   return (
-    <main className={styles.contactPage}>
-      {/* HERO */}
-      <section className={`${styles.typoHero} ${styles.container}`}>
-        <p className={styles.kicker}>contact</p>
-        <motion.h1 className={styles.big} {...fadeUp}>
-          Lad os skabe noget
-          <br /> sammen
+    <main className={styles.contact}>
+      <section className={styles.wrap}>
+        <motion.h1
+          className={styles.title}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...ease, delay: 0.05 }}
+        >
+          KONTAKT
         </motion.h1>
+
         <motion.p
-          className={styles.sub}
-          {...fadeUp}
-          transition={{ delay: 0.05, ...easing }}
+          className={styles.subtitle}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...ease, delay: 0.2 }}
         >
-          — Jeg svarer altid gerne på mail eller via LinkedIn
+          Lad os skabe noget sammen
         </motion.p>
       </section>
 
-      {/* INTRO */}
-      <section className={`${styles.contactIntro} ${styles.container}`}>
-        <motion.p className={styles.lead} {...fadeUp}>
-          Jeg er altid åben for nye projekter, sparring eller bare en snak om
-          design og frontend. Du kan fange mig her:
+      <section className={styles.cta}>
+        <motion.p
+          className={styles.bigline}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={ease}
+        >
+          Jeg svarer altid gerne på{" "}
+          <a href="mailto:SOFIENHOLM@GMAIL.COM">mail</a> eller på{" "}
+          <a
+            href="https://www.linkedin.com/in/sofie-holm-286101356/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </motion.p>
-      </section>
-
-      {/* CTA LINKS */}
-      <section className={`${styles.contactLinks} ${styles.container}`}>
-        <motion.a
-          href="mailto:mail@ditdomæne.dk"
-          className={`${styles.btn} ${styles.btnSolid}`}
-          {...fadeUp}
-        >
-          ✉️ mail@ditdomæne.dk
-        </motion.a>
-        <motion.a
-          href="https://www.linkedin.com/in/dinprofil"
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.btn} ${styles.btnGhost}`}
-          {...fadeUp}
-          transition={{ delay: 0.1, ...easing }}
-        >
-          🔗 LinkedIn
-        </motion.a>
       </section>
     </main>
   );
