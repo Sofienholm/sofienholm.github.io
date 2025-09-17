@@ -97,13 +97,8 @@ export default function ProjectDetail() {
           </div>
           <div className={styles.featureVisual}>
             {/* kode som billede */}
-            {f.codeImg && (
-              <img
-                className={styles.codeImg}
-                src={ensureAbs(f.codeImg)}
-                alt="Kode"
-              />
-            )}
+           
+            
 
             {/* hovedbillede */}
             {f.image && (

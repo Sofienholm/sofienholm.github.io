@@ -37,8 +37,13 @@
   z-index: 5;
 }
 
-section {
-
+.hero, .feature, .stack, .gallery {
+  max-width: 80rem;
+  margin: 1.6rem auto;
+  padding: 0 0 3.2rem;
+}
+.hero, .feature, .stack, .gallery {
+  max-width: 80rem;
   margin: 1.6rem auto;
   padding: 0 0 3.2rem;
 }
@@ -60,12 +65,11 @@ section {
 }
 
 .feature {
-  max-width: 80rem;
   margin: clamp(0.5rem, 4vw, 2.6rem) auto;
   display: flex;
   flex-direction: column;
   gap: clamp(1rem, 3vw, 2rem);
-  align-items: start;
+  align-items: stretch;
 }
 .featureText {
   display: flex;
@@ -123,26 +127,32 @@ section {
 
 .chips {
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  
+  
 }
 .chips li {
-  border: 1px solid color-mix(in oklab, var(--ink) 18%, #fff);
+  border: 3px solid color-mix(in oklab, var(--ink) 18%, #fff);
   background: color-mix(in oklab, var(--blush) 40%, #fff);
   border-radius: 50%;
   padding: 1rem;
   font-weight: 600;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 .titleRow {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin: 0 0 1.2rem;
+  margin: 0 0 1rem;
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: 0.02em;
   line-height: 1;
@@ -151,7 +161,9 @@ section {
   text-transform: uppercase;
   font-family: "phudu-variable", sans-serif;
 }
-
+.titleRow h3 {
+  margin: 0;
+}
 .rule {
   height: 1px;
   flex: 1;
@@ -166,7 +178,7 @@ section {
 }
 .illus img {
   width: 100%;
-  background: #fff;
+
   display: block;
 }
 
