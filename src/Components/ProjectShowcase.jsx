@@ -93,7 +93,7 @@ export default function ProjectShowcase({
     );
   }, []);
 
- return (
+  return (
     <section className={styles.projectShowcase}>
       <h1 className={styles.projectTitle}>{title}</h1>
       <div className={styles.heroImage} ref={heroRef}>
@@ -118,7 +118,7 @@ export default function ProjectShowcase({
       <p className={styles.outroText} ref={outroRef}>
         {outroText}
       </p>
+    
     </section>
   );
 }
-

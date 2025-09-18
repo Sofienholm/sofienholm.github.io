@@ -1,6 +1,4 @@
-
 .page {
- 
   color: var(--brun);
 }
 .top,
@@ -11,21 +9,33 @@
   flex-direction: column;
 }
 .back {
-  border: 1px solid var(--brun);
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
   text-decoration: none;
-  color: var(--brun);
+  color: var(--pink);
   font-weight: 600;
   width: max-content;
+  font-size:1.5rem;
+  align-items: start;
 }
+.back::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 15px solid currentColor; /* trekant i tekstens farve */
+  margin-right: 0.6rem;
+  margin-left: 2rem;
+  transform: translateY(2px); /* juster lodret position */
+}
+
 .title {
   font-family: "phudu-variable", sans-serif;
   margin: 0;
   font-weight: 700;
   line-height: 0.9;
   font-size: clamp(64px, 16vw, 220px);
-  color: var(--sky);
+  color: var(--brun);
   position: relative;
   left: 5rem;
   z-index: 5;
@@ -91,14 +101,18 @@
   padding-bottom: 56.25%; /* 16:9 (ændr tallet for andre formater) */
   height: 0;
   overflow: hidden;
-  border-radius: 14px;     /* ← tilføj */
+  border-radius: 14px; /* ← tilføj */
   border: 3px solid var(--pink); /* ← tilføj */
   width: 100%;
 }
-.featureVideoWrapper iframe { /* kan styles, men ikke spillerens indre UI */
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  border: 0; border-radius: 14px; /* match wrapper */
+.featureVideoWrapper iframe {
+  /* kan styles, men ikke spillerens indre UI */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 14px; /* match wrapper */
 }
 
 /* kode-boble (tekst) */
@@ -146,19 +160,18 @@
 
 .chips {
   list-style: none;
-  margin: 0;
+  margin: 2rem -2.5rem 4rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 .chips li {
   border: 3px solid var(--brun);
-  background: var(--lysbrun);
-  border-radius: 50%;
-  padding: 1rem;
+  background: #e2d3cc;
+  border-radius: 5%;
+  padding: 1.3rem;
   font-weight: 600;
-  width: 4rem;
-  height: 4rem;
+
   text-align: center;
   display: flex;
   align-items: center;
@@ -172,7 +185,7 @@
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: 0.02em;
   line-height: 1;
-  color: var(--accent);
+  color: var(--sky);
   font-weight: 900;
   text-transform: uppercase;
   font-family: "phudu-variable", sans-serif;
@@ -189,15 +202,18 @@
 .illus {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;
 }
 .illus img {
-  width: 100%;
-
-  display: block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
+.illus img:active {
+  transform: scale(2);
+  z-index: 2;
+}
 .gallery {
   margin-top: 10rem;
 }

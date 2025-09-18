@@ -79,7 +79,7 @@ export default function ProjectDetail() {
       <main className={styles.page}>
         <nav className={styles.top}>
           <Link to="/projects" className={styles.back}>
-            ← TILBAGE
+            TILBAGE
           </Link>
         </nav>
         <h1 className={styles.title}>Projekt ikke fundet</h1>
@@ -110,7 +110,7 @@ export default function ProjectDetail() {
     <main className={styles.page}>
       <nav className={styles.top}>
         <Link to="/projects" className={styles.back}>
-          ← TILBAGE
+          TILBAGE
         </Link>
         <h1 className={styles.title}>{project.title}</h1>
       </nav>

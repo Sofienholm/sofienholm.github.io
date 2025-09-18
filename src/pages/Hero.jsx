@@ -111,7 +111,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.9, ease }}
         >
-          Scroll ned og se, hvad jeg kan
+          Frontend med øje for detaljen og styr på strukturen.
         </motion.p>
       </div>
     </section>

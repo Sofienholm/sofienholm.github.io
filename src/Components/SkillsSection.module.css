@@ -1,9 +1,10 @@
 .wrap {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem 20rem 4rem 1rem;
+  padding: 8rem 10rem 4rem 10rem;
   color: var(--brun);
   background-color: color-mix(in srgb, var(--lysbrun) 5%, transparent);
+  
 }
 
 .titleRow {

@@ -57,7 +57,6 @@
 /* --- Styles fra react-burger-menu / GitHub --- */
 
 :global(.bm-burger-button) {
-  /* Hvis du bruger lib’ens burger-button (måske ikke hvis du bruger din egen knap) */
   position: fixed;
   right: 36px; /* højre side */
   left: auto;
@@ -113,9 +112,16 @@
 /* Liste af items i menuen */
 :global(.bm-item-list) {
   color: var(--lyspink);
-
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  margin-top: 3rem;
+  font-family: "phudu-variable", sans-serif;
+  font-weight: 600;
+  font-size: 2.9rem;
+  letter-spacing: -0.05em;
+  
 }
 
 /* Individuelle items */

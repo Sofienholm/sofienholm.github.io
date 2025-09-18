@@ -53,6 +53,10 @@ export default function Projects() {
             )}
 
             <motion.div className={styles.copy} {...fade}>
+              <div className={styles.title2}>
+                 {p.title2}
+              </div>
+             
               <p className={styles.desc}>{p.description}</p>
               <NavLink to={`/projects/${p.id}`} className={styles.cta}>
                 SE DETALJER

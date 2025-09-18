@@ -1,4 +1,5 @@
 import Hero from "./Hero.jsx";
+import { NavLink } from "react-router";
 import Intro from "../Components/intro.jsx";
 import ProjectShowcase from "../Components/ProjectShowcase";
 import beer1 from "../assets/BEDRBEER/BB1.png";
@@ -9,6 +10,7 @@ import pla1 from "../assets/PLAKATEN/poster1.png";
 import pla2 from "../assets/PLAKATEN/poster2.png";
 import pla3 from "../assets/PLAKATEN/poster3.jpg";
 import pla4 from "../assets/PLAKATEN/poster4.png";
+import styles from "../Components/ProjectShowcase.module.css";
 
 
 
@@ -30,12 +32,18 @@ export default function Home() {
         title="PLAKATEN"
         heroImg={pla1}
         introText="Et responsivt plakatprojekt..."
-        gallery={[
-        pla2, pla3, pla4
-        ]}
+        gallery={[pla2, pla3, pla4]}
         outroText="Her eksperimenterede jeg med farver, logo og baggrundsvideo..."
       />
-
+      <div className={styles.alle}>
+        <h3>
+          Vil du se mere?
+          <p>
+            <NavLink to="/projects">Alle projekter</NavLink>
+            
+          </p>
+        </h3>
+      </div>
     </div>
   );
 }

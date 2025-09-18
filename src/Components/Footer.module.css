@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 4rem 6rem;
-background: var(--bg);
+  background: var(--bg);
   color: var(--lysbrun);
 }
 
