@@ -128,22 +128,33 @@ export default function ProjectDetail() {
             )}
           </div>
           <div className={styles.featureVisual}>
-            {(f.video || f.video?.src) && (
-              <video
-                className={styles.featureVideo}
-                src={typeof f.video === "string" ? f.video : f.video.src}
-                poster={
-                  typeof f.video === "object" ? f.video.poster : undefined
-                }
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls={false}
-              />
+            {Array.isArray(f.video) &&
+              f.video.map((vid, index) => (
+                <iframe
+                  key={index}
+                  src={vid}
+                  width="640"
+                  height="360"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title={`${f.title}-video-${index}`}
+                ></iframe>
+              ))}
+
+            {/* Hvis f.video er en streng (enkelt link) */}
+            {typeof f.video === "string" && (
+              <iframe
+                src={f.video}
+                width="640"
+                height="360"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={f.title}
+              ></iframe>
             )}
-            {/* kode som billede */}
-            {/* hovedbillede */}+{" "}
+
             {!f.video && f.image && (
               <img
                 className={styles.featureImg}

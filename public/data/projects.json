@@ -3,7 +3,7 @@
     "id": 1,
     "title": "BEDR BEER",
     "year": 2025,
-    "image":   "assets/BEDRBEER/BB1.png",
+    "image": "assets/BEDRBEER/BB1.png",
     "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
@@ -57,7 +57,7 @@
     "id": 2,
     "title": "CILLECYKLUS",
     "year": 2025,
-    "image":"assets/CILLE/cille1.png",
+    "image": "assets/CILLE/cille1.png",
     "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
@@ -101,36 +101,25 @@
       "assets/CILLE/illu5.png"
     ]
   },
- {
+  {
     "id": 3,
     "title": "PLAKATEN",
     "year": 2025,
-    "image":"assets/PLAKATEN/pla1.png",
+    "image": "assets/PLAKATEN/pla1.png",
     "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
     "tags": ["Branding", "UI", "JS", "Design"],
-    "gallery": [
-      "assets/PLAKATEN/pla2.jpg",
-      "assets/PLAKATEN/pla3.png"
-    ],
+    "gallery": ["assets/PLAKATEN/pla2.jpg", "assets/PLAKATEN/pla3.png"],
     "feature": [
       {
         "title": "Responsivt layout",
-        "text":  "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. "  , 
-        "video": {
-          "src": "assets/PLAKATEN/pla.mp4",
-          "src": "assets/PLAKATEN/pla.mp4"
-        }
+        "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
+        "video": [
+          "https://player.vimeo.com/1119738996",
+          "https://player.vimeo.com/1119738981"
+        ]
       }
     ],
-    "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Photohop",
-      "Illustrator"
-    
-      
-    ],
+    "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator"],
     "tools": ["Figma"],
     "illustrations": [
       "assets/PLAKATEN/illu1.png",
