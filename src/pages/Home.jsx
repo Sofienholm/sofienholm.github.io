@@ -10,7 +10,7 @@ import pla2 from "../assets/PLAKATEN/poster2.png";
 import pla3 from "../assets/PLAKATEN/poster3.jpg";
 import pla4 from "../assets/PLAKATEN/poster4.png";
 
-import "../styles/global.css";
+
 
 export default function Home() {
   return (

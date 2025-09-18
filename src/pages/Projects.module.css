@@ -1,10 +1,4 @@
-:root {
-  --bg: #fff9f5;
-  --pink: #f38ad2;
-  --blue: #38b6ff;
-  --ink: #514944;
-  --taupe: #7c716b;
-}
+
 
 .section {
   background: var(--bg);

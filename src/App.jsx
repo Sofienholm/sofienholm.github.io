@@ -7,6 +7,7 @@ import ProjectDetail from "./pages/ProjectDetail.jsx";
 import BurgerMenu from "./Components/BurgerMenu.jsx"; // vi bruger samme filnavn som før
 import Footer from "./Components/Footer.jsx";
 
+
 function App() {
   if ("scrollRestoration" in window.history) {
     window.history.scrollRestoration = "manual"; // 🔥 forhindrer browseren i at huske scroll

@@ -1,12 +1,3 @@
-:root {
-  /* Fald tilbage hvis dine globale vars ikke findes */
-  --ink: #514944;
-  --taupe: #7c716b;
-  --bg: #fffdf9;
-  --accent: #4fd3ff; /* blå overskrift som på billedet */
-  --border: #cec5bf;
-}
-
 .wrap {
   max-width: 100%;
   margin: 0 auto;

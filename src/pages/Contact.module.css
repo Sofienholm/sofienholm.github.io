@@ -1,12 +1,7 @@
-:root{
-  --ink:#514944;
-  --taupe:#7c716b;
-  --blush:#F2E9E6;
-  --bg:#fffdf9;
-}
+
 
 .contact{
-  background: var(--blush);
+  background: var(--bg);
   min-height: 100dvh;
 }
 .wrap{
@@ -26,7 +21,7 @@
 .subtitle{
   margin: clamp(6px, .8vw, 12px) 0 0;
   font-style: italic;
-  color: var(--taupe);
+  color: var(--lysbrun);
   font-weight: 500;
   font-size: clamp(20px, 3.8vw, 44px);
 }
@@ -51,7 +46,7 @@
   border-bottom: 2px solid transparent;
 }
 .bigline a:hover{
-  border-bottom-color: var(--taupe);
+  border-bottom-color: var(--lysbrun);
 }
 @media (max-width: 640px){
   .wrap{ padding-top: clamp(48px, 10vw, 72px); }

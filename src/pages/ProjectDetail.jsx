@@ -144,14 +144,17 @@ export default function ProjectDetail() {
 
           <div className={styles.featureVisual}>
             {/* Flere videoer */}
-            {Array.isArray(f.video) &&
-              f.video.map((vid, index) => (
-                <VimeoEmbed
-                  key={index}
-                  src={vid}
-                  title={`${f.title}-video-${index}`}
-                />
-              ))}
+            {Array.isArray(f.video) && (
+              <div className={styles.videoGrid}>
+                {f.video.map((vid, index) => (
+                  <VimeoEmbed
+                    key={index}
+                    src={vid}
+                    title={`${f.title}-video-${index}`}
+                  />
+                ))}
+              </div>
+            )}
 
             {/* Én video */}
             {typeof f.video === "string" && (

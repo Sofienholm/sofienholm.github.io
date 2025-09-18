@@ -20,9 +20,17 @@
     ],
     "feature": [
       {
-        "title": "Responsivt layout",
-        "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
-        "video": "https://player.vimeo.com/video/1119739134?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+        "title": "3D dåse - zerobuzzbrew",
+        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
+        "image": "/assets/BEDRBEER/3DMODEL2.png",
+        "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
+        "codeImg": "/assets/BEDRBEER/code-badge.png",
+        "model": {
+          "src": "/models/passssiiiooonnn.glb",
+          "alt": "BEDR BEER dåse",
+          "autoRotate": true,
+          "orbit": "20deg 90deg 2m"
+        }
       }
     ],
     "tech": [
@@ -61,11 +69,9 @@
     ],
     "feature": [
       {
-        "title": "3D dåse",
-        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
-        "video": {
-          "src": "assets/CILLE/videocille.mp4"
-        }
+        "title": "Responsivt layout",
+        "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
+        "video": "https://player.vimeo.com/video/1119739134?autoplay=1&loop=1&title=0&byline=0&portrait=0"
       }
     ],
     "tech": [
@@ -105,10 +111,10 @@
       {
         "title": "Responsivt layout",
         "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
-        "video": [
-          "https://player.vimeo.com/video/1119738996?autoplay=1&loop=1&title=0&byline=0&portrait=0",
-          "https://player.vimeo.com/video/1119738981?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        ]
+       "video": [
+      "https://player.vimeo.com/video/1119738996?autoplay=1&loop=1&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/1119738981?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+    ]
       }
     ],
     "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator"],

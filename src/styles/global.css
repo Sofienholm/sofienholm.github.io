@@ -2,6 +2,16 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --brun: #514944;
+  --lyspink: #efd3e3;
+  --lemon: #fffabd;
+  --mint: #d6edeb;
+  --lysbrun: #7c716b;
+  --bg: #f2e9e6;
+  --sky: #47b8ff;
+  --pink: #f38ad2;
+}
 
 html,
 body {
@@ -11,21 +21,13 @@ body {
 
 body {
   font-family: "poppins", sans-serif;
-  background-color: #f4ece9;
   color: var(--ink, #514944);
   line-height: 1.6;
   min-height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-}
-
-#root {
-  --ink: #514944;
-  --rose: #efd3e3;
-  --lemon: #fffabd;
-  --mint: #d6edeb;
-  --taupe: #7c716b;
-  --blush: #f2e9e6;
+  background-color: var(--bg);
+  border: 3px solid var(--brun);
 }
 
 a {
@@ -48,21 +50,19 @@ textarea,
 select {
   font: inherit;
 }
-.new
-  {
-    position: absolute;
-    top:169rem;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+.new {
+  position: absolute;
+  top: 169rem;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 
-  font-family:"poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
-
-  }
+}
 
 @keyframes logo-spin {
   from {
