@@ -3,10 +3,10 @@
     "id": 1,
     "title": "BEDR BEER",
     "year": 2025,
+    "image":   "assets/BEDRBEER/BB1.png",
     "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "assets/BEDRBEER/BB1.png",
       "assets/BEDRBEER/3DMODEL1.png",
       "assets/BEDRBEER/BB2.png",
       "assets/BEDRBEER/BB3.png",
@@ -20,7 +20,7 @@
     ],
     "feature": [
       {
-        "title": "3D dåse",
+        "title": "3D dåse - zerobuzzbrew",
         "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
         "image": "/assets/BEDRBEER/3DMODEL2.png",
         "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
@@ -57,10 +57,10 @@
     "id": 2,
     "title": "CILLECYKLUS",
     "year": 2025,
+    "image":"assets/CILLE/cille1.png",
     "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "assets/CILLE/cille1.png",
       "assets/CILLE/cille2.jpg",
       "assets/CILLE/cille3.jpg",
       "assets/CILLE/cille4.png",
@@ -101,13 +101,43 @@
       "assets/CILLE/illu5.png"
     ]
   },
-  {
+ {
     "id": 3,
-    "title": "Plakatdesign",
+    "title": "PLAKATEN",
     "year": 2025,
-    "description": "Et grafisk designprojekt med fokus på responsivt layout, farver og logo-udvikling. Viser mine evner inden for grafisk design og visuel kommunikation.",
-    "tags": ["Grafisk Design", "Illustrator", "Farveteori"],
-    "image": "/assets/PLAKATEN/poster-1.jpg",
-    "links": [{ "url": "#", "text": "Case coming soon" }]
+    "image":"assets/PLAKATEN/pla1.png",
+    "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
+    "tags": ["Branding", "UI", "JS", "Design"],
+    "gallery": [
+      "assets/PLAKATEN/pla2.jpg",
+      "assets/PLAKATEN/pla3.png"
+    ],
+    "feature": [
+      {
+        "title": "Responsivt layout",
+        "text":  "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. "  , 
+        "video": {
+          "src": "assets/PLAKATEN/pla.mp4",
+          "src": "assets/PLAKATEN/pla.mp4"
+        }
+      }
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Photohop",
+      "Illustrator"
+    
+      
+    ],
+    "tools": ["Figma"],
+    "illustrations": [
+      "assets/PLAKATEN/illu1.png",
+      "assets/PLAKATEN/illu2.png",
+      "assets/PLAKATEN/illu3.png",
+      "assets/PLAKATEN/illu4.jpg",
+      "assets/PLAKATEN/illu5.png"
+    ]
   }
 ]

@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 
-const _motion = motion; 
+const _motion = motion;
+const ensureAbs = (p) =>
+  !p ? undefined : p.startsWith("/") ? p : `/${p.replace(/^\//, "")}`;
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -28,28 +30,37 @@ export default function Projects() {
         PROJEKTER
       </motion.h2>
 
-      {projects.map((p, i) => (
-        <div key={p.id} className={`${styles.row} ${i % 2 ? styles.rev : ""}`}>
-          {/* blå "svævende" titel */}
-          <motion.h3 className={styles.kicker} {...fade}>
-            {p.title}
-          </motion.h3>
+      {projects.map((p, i) => {
+        const hero = ensureAbs(p.image ?? p.gallery?.[0]);
 
-          <motion.img
-            className={styles.img}
-            src={p.image}
-            alt={p.title}
-            {...fade}
-          />
+        return (
+          <div
+            key={p.id}
+            className={`${styles.row} ${i % 2 ? styles.rev : ""}`}
+          >
+            {/* blå "svævende" titel */}
+            <motion.h3 className={styles.kicker} {...fade}>
+              {p.title}
+            </motion.h3>
 
-          <motion.div className={styles.copy} {...fade}>
-            <p className={styles.desc}>{p.description}</p>
-            <NavLink to={`/projects/${p.id}`} className={styles.cta}>
-              SE DETALJER
-            </NavLink>
-          </motion.div>
-        </div>
-      ))}
+            {hero && (
+              <motion.img
+                className={styles.img}
+                src={hero}
+                alt={p.title}
+                {...fade}
+              />
+            )}
+
+            <motion.div className={styles.copy} {...fade}>
+              <p className={styles.desc}>{p.description}</p>
+              <NavLink to={`/projects/${p.id}`} className={styles.cta}>
+                SE DETALJER
+              </NavLink>
+            </motion.div>
+          </div>
+        );
+      })}
     </section>
   );
 }
