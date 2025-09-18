@@ -80,11 +80,7 @@
   margin: 0 0 0.8rem;
   line-height: 1.7;
 }
-.featureVideo {
-  width: 100%;
-  display: block;
-  border-radius: var(--radius, 12px);
-}
+
 .featureVideoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
