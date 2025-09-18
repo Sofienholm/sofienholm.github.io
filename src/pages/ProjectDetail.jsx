@@ -38,6 +38,28 @@ function LottieBox({ src, w = 300, h = 300, loop = true, autoplay = true }) {
   );
 }
 
+// Lille helper til responsive Vimeo embeds
+function VimeoEmbed({ src, title }) {
+  return (
+    <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+      <iframe
+        src={src}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        title={title}
+      ></iframe>
+    </div>
+  );
+}
+
 export default function ProjectDetail() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
@@ -109,8 +131,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
-      {/* FEATURES — understøtter nu kode + 3D-model */}
-
+      {/* FEATURES */}
       {features.map((f, i) => (
         <section key={i} className={styles.feature}>
           {f.title && (
@@ -119,6 +140,7 @@ export default function ProjectDetail() {
               <span className={styles.rule} />
             </div>
           )}
+
           <div className={styles.featureText}>
             {f.text && <p>{f.text}</p>}
             {f.code && (
@@ -127,34 +149,24 @@ export default function ProjectDetail() {
               </pre>
             )}
           </div>
+
           <div className={styles.featureVisual}>
+            {/* Flere videoer */}
             {Array.isArray(f.video) &&
               f.video.map((vid, index) => (
-                <iframe
+                <VimeoEmbed
                   key={index}
                   src={vid}
-                  width="640"
-                  height="360"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                   title={`${f.title}-video-${index}`}
-                ></iframe>
+                />
               ))}
 
-            {/* Hvis f.video er en streng (enkelt link) */}
+            {/* Én video */}
             {typeof f.video === "string" && (
-              <iframe
-                src={f.video}
-                width="640"
-                height="360"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title={f.title}
-              ></iframe>
+              <VimeoEmbed src={f.video} title={f.title} />
             )}
 
+            {/* Fallback billede */}
             {!f.video && f.image && (
               <img
                 className={styles.featureImg}
@@ -162,7 +174,8 @@ export default function ProjectDetail() {
                 alt={`${project.title} feature`}
               />
             )}
-            {/* 3D model (valgfri) */}
+
+            {/* 3D model */}
             {f.model?.src && (
               <model-viewer
                 className={styles.model}
@@ -198,7 +211,6 @@ export default function ProjectDetail() {
           {!!illustrations.length && (
             <div className={styles.illus}>
               {illustrations.map((item, n) => {
-                // A) Objekt: { lottie, w, h, loop, autoplay }
                 if (item && typeof item === "object" && item.lottie) {
                   return (
                     <LottieBox
@@ -211,11 +223,9 @@ export default function ProjectDetail() {
                     />
                   );
                 }
-                // B) String der ender på .json => Lottie
                 if (typeof item === "string" && /\.json(\?.*)?$/i.test(item)) {
                   return <LottieBox key={n} src={ensureAbs(item)} />;
                 }
-                // C) Ellers almindeligt billede
                 return (
                   <img
                     key={n}
