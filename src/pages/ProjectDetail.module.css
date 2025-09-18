@@ -9,11 +9,11 @@
 }
 .top,
 .bottom {
-  max-width: min(var(--maxw), 92vw);
+
   margin: 1.2rem auto 0;
   display: flex;
   gap: 1rem;
-  align-items: flex-end;
+  flex-direction: column;
 }
 .back {
   border: 1px solid var(--ink);
@@ -22,18 +22,17 @@
   text-decoration: none;
   color: var(--ink);
   font-weight: 600;
+  width: max-content;
 }
 .title {
-  margin: 0.2rem auto 0;
-  width: 100%;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
   font-family: "phudu-variable", sans-serif;
+  margin: 0;
+  font-weight: 700;
+  line-height: 0.9;
   font-size: clamp(64px, 16vw, 220px);
-  color: lemonchiffon;
+  color: var(--sky, #47b8ff);
   position: relative;
-  left: -5rem;
+  left: 5rem;
   z-index: 5;
 }
 
@@ -52,7 +51,7 @@
   grid-template-columns: 1.5fr 1fr;
   gap: 1rem;
   align-items: center;
-  margin-top: 30rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 }
 .hero img {
