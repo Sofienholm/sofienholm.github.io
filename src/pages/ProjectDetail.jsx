@@ -41,7 +41,7 @@ function LottieBox({ src, w = 300, h = 300, loop = true, autoplay = true }) {
 // Lille helper til responsive Vimeo embeds
 function VimeoEmbed({ src, title }) {
   return (
-    <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+    <div className={styles.featureVideoWrapper}>
       <iframe
         src={src}
         style={{
