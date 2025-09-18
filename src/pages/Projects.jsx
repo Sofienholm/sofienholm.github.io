@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 
+const _motion = motion; 
+
 export default function Projects() {
   const [projects, setProjects] = useState([]);
 

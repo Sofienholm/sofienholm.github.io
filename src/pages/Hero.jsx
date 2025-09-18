@@ -5,6 +5,8 @@ import imgPortrait from "../assets/potrait.png";
 import imgNotebook from "../assets/notebook.jpg";
 import imgLaptop from "../assets/laptop.jpg";
 
+const _motion = motion; 
+
 export default function Hero() {
   // Titlen: ease matcher din CodePen-vibe
   const ease = [0.65, 0.05, 0.36, 1];

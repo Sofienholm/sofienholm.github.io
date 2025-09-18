@@ -33,7 +33,15 @@
         }
       }
     ],
-    "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator", "Figma", "AE"],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Photohop",
+      "Illustrator",
+      "Figma",
+      "AE"
+    ],
     "tools": ["Figma"],
     "illustrations": [
       "/assets/BEDRBEER/illu1.png",
@@ -61,23 +69,37 @@
     ],
     "feature": [
       {
-    
         "title": "3D dåse",
         "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
-         "video": {
-      "src": "assets/CILLE/videocille.mp4"},
+        "video": {
+          "src": "assets/CILLE/videocille.mp4"
         }
+      }
     ],
-    "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator", "Figma", "AE"],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Photohop",
+      "Illustrator",
+      "Figma",
+      "AE"
+    ],
     "tools": ["Figma"],
-"illustrations": [
-  "assets/CILLE/illu1.png",
-  { "lottie": "assets/CILLE/cycle.json", "w": 280, "h": 280, "loop": true, "autoplay": true },
-  "assets/CILLE/illu2.png",
-  "assets/CILLE/illu3.png",
-  "assets/CILLE/illu4.png",
-  "assets/CILLE/illu5.png"
-]
+    "illustrations": [
+      "assets/CILLE/illu1.png",
+      {
+        "lottie": "assets/CILLE/cycle.json",
+        "w": 280,
+        "h": 280,
+        "loop": true,
+        "autoplay": true
+      },
+      "assets/CILLE/illu2.png",
+      "assets/CILLE/illu3.png",
+      "assets/CILLE/illu4.png",
+      "assets/CILLE/illu5.png"
+    ]
   },
   {
     "id": 3,
