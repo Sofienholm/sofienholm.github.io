@@ -1,10 +1,42 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import styles from "./ProjectDetail.module.css";
 
 const toArray = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 const asFeature = (f) => (typeof f === "string" ? { image: f } : f || {});
 const ensureAbs = (p) => (p?.startsWith("/") ? p : `/${p || ""}`);
+
+function LottieBox({ src, w = 300, h = 300, loop = true, autoplay = true }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const init = () => {
+      if (!ref.current || !window.lottie) return;
+      const anim = window.lottie.loadAnimation({
+        container: ref.current,
+        renderer: "svg",
+        loop,
+        autoplay,
+        path: src,
+      });
+      return () => anim?.destroy();
+    };
+
+    if (!window.lottie) {
+      const s = document.createElement("script");
+      s.src = "https://unpkg.com/lottie-web/build/player/lottie_light.min.js";
+      s.onload = init;
+      document.head.appendChild(s);
+      return () => {};
+    } else {
+      return init();
+    }
+  }, [src, loop, autoplay]);
+
+  return (
+    <div ref={ref} style={{ width: w, height: h, pointerEvents: "none" }} />
+  );
+}
 
 export default function ProjectDetail() {
   const { id } = useParams();
@@ -96,23 +128,33 @@ export default function ProjectDetail() {
             )}
           </div>
           <div className={styles.featureVisual}>
+            {(f.video || f.video?.src) && (
+              <video
+                className={styles.featureVideo}
+                src={typeof f.video === "string" ? f.video : f.video.src}
+                poster={
+                  typeof f.video === "object" ? f.video.poster : undefined
+                }
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
+              />
+            )}
             {/* kode som billede */}
-           
-            
-
-            {/* hovedbillede */}
-            {f.image && (
+            {/* hovedbillede */}+{" "}
+            {!f.video && f.image && (
               <img
                 className={styles.featureImg}
                 src={ensureAbs(f.image)}
                 alt={`${project.title} feature`}
               />
             )}
-
             {/* 3D model (valgfri) */}
             {f.model?.src && (
               <model-viewer
-                class={styles.model}
+                className={styles.model}
                 src={ensureAbs(f.model.src)}
                 alt={f.model.alt || "3D model"}
                 auto-rotate
@@ -144,9 +186,33 @@ export default function ProjectDetail() {
           )}
           {!!illustrations.length && (
             <div className={styles.illus}>
-              {illustrations.map((i, n) => (
-                <img key={n} src={ensureAbs(i)} alt={`Illustration ${n + 1}`} />
-              ))}
+              {illustrations.map((item, n) => {
+                // A) Objekt: { lottie, w, h, loop, autoplay }
+                if (item && typeof item === "object" && item.lottie) {
+                  return (
+                    <LottieBox
+                      key={n}
+                      src={ensureAbs(item.lottie)}
+                      w={item.w ?? 300}
+                      h={item.h ?? 300}
+                      loop={item.loop ?? true}
+                      autoplay={item.autoplay ?? true}
+                    />
+                  );
+                }
+                // B) String der ender på .json => Lottie
+                if (typeof item === "string" && /\.json(\?.*)?$/i.test(item)) {
+                  return <LottieBox key={n} src={ensureAbs(item)} />;
+                }
+                // C) Ellers almindeligt billede
+                return (
+                  <img
+                    key={n}
+                    src={ensureAbs(item)}
+                    alt={`Illustration ${n + 1}`}
+                  />
+                );
+              })}
             </div>
           )}
         </section>

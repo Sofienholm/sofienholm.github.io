@@ -54,7 +54,11 @@
   height: auto;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
 }
-
+.featureVideo {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius, 12px);
+}
 .copy {
   max-width: 520px;
   color: var(--ink);

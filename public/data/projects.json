@@ -52,52 +52,32 @@
     "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "assets/BEDRBEER/BB1.png",
-      "assets/BEDRBEER/3DMODEL1.png",
-      "assets/BEDRBEER/BB2.png",
-      "assets/BEDRBEER/BB3.png",
-      "assets/BEDRBEER/BB4.png",
-      "assets/BEDRBEER/BB5.png",
-      "assets/BEDRBEER/BB6.png",
-      "assets/BEDRBEER/BB7.png",
-      "assets/BEDRBEER/BB8.png",
-      "assets/BEDRBEER/BB9.png",
-      "assets/BEDRBEER/BB10.png"
+      "assets/CILLE/cille1.png",
+      "assets/CILLE/cille2.jpg",
+      "assets/CILLE/cille3.jpg",
+      "assets/CILLE/cille4.png",
+      "assets/CILLE/cille5.png",
+      "assets/CILLE/cille6.png"
     ],
     "feature": [
       {
+    
         "title": "3D dåse",
         "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
-        "image": "/assets/BEDRBEER/3DMODEL2.png",
-        "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
-        "codeImg": "/assets/BEDRBEER/code-badge.png",
-        "model": {
-          "src": "/models/passssiiiooonnn.glb",
-          "alt": "BEDR BEER dåse",
-          "autoRotate": true,
-          "orbit": "20deg 90deg 2m"
+         "video": {
+      "src": "assets/CILLE/videocille.mp4"},
         }
-      }
     ],
     "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator", "Figma", "AE"],
     "tools": ["Figma"],
-    "illustrations": [
-      "/assets/BEDRBEER/illu1.png",
-      "/assets/BEDRBEER/illu2.png",
-      "/assets/BEDRBEER/illu3.png",
-      "/assets/BEDRBEER/illu4.png",
-      "/assets/BEDRBEER/illu5.png",
-      "/assets/BEDRBEER/illu6.png"
-    ]
-  },
-    "id": 2,
-
-    "title": "Cykelcyklus",
-    "year": 2025,
-    "description": "En interaktiv udstilling til Steno Museet om menstruationscyklussen. Brugeren styrer flowet gennem en bold og oplever animationer og dataformidling.",
-    "tags": ["UX", "Interaktiv", "Figma", "Frontend"],
-    "image": "/assets/CILLE/cycle-1.jpg",
-    "links": [{ "url": "#", "text": "Case coming soon" }]
+"illustrations": [
+  "assets/CILLE/illu1.png",
+  { "lottie": "assets/CILLE/cycle.json", "w": 280, "h": 280, "loop": true, "autoplay": true },
+  "assets/CILLE/illu2.png",
+  "assets/CILLE/illu3.png",
+  "assets/CILLE/illu4.png",
+  "assets/CILLE/illu5.png"
+]
   },
   {
     "id": 3,
