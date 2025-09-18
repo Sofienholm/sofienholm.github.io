@@ -5,6 +5,8 @@ import imgPortrait2 from "../assets/portrait.jpg";
 import imgPortrait3 from "../assets/aboutme.png";
 import SkillsSection from "../Components/SkillsSection";
 
+const _motion = motion;
+
 const fade = {
   initial: { opacity: 0, y: 14 },
   whileInView: { opacity: 1, y: 0 },

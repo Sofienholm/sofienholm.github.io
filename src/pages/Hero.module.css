@@ -18,7 +18,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: #45b6ff;
+  color: var(--sky);
   line-height: 1.3;
   font-size: clamp(2.2rem, 6vw, 6rem);
   margin: 0;
@@ -48,7 +48,7 @@
 @media (min-width: 700px) {
   .grid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: repeat(7, 8vw);
+   grid-template-rows: repeat(7, 8vw);
     gap: 1.25rem;
     width: 100%;
   }
@@ -73,10 +73,11 @@
   position: relative;
   left: clamp(1rem, 6vw, 8rem);          /* samme indrykning som .title */
 }
-.year, .scroll {
+.year,
+.scroll {
   font-family: "poppins", sans-serif;
   margin: .25rem 0;
-  color: #1f1f1f;
+  color: var(--kull);
 }
-.year  { font-size: clamp(1rem, 2.2vw, 2rem); color: #45b6ff; font-weight: 700; }
-.scroll{ font-size: clamp(1rem, 2vw, 1.6rem); color: #222; }
+.year  { font-size: clamp(1rem, 2.2vw, 2rem); color: var(--sky); font-weight: 700; }
+.scroll{ font-size: clamp(1rem, 2vw, 1.6rem); color: var(--skifer); }

@@ -15,7 +15,7 @@
   line-height: 0.9;
   font-size: clamp(64px, 16vw, 220px);
   color: var(--sky);
-  position: relative;
+    position: relative;
   left: -5rem;
   z-index: 5;
 }
@@ -40,7 +40,7 @@
 }
 
 .copy {
-  color: var(--ink);
+  color: var(--brun);
 }
 
 .copy p {
@@ -58,10 +58,10 @@
 .link {
   display: inline-block;
   padding: 0.6rem 0.85rem;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--brun);
   border-radius: 10px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--brun);
   transition: transform 0.2s ease;
 }
 .link:hover {
@@ -99,7 +99,7 @@
 }
 
 .pitchText {
-  color: var(--sky, #47b8ff);
+  color: var(--sky);
   font-weight: 800;
   line-height: 1.6;
   font-size: clamp(1.15rem, 2.2vw, 1.6rem);
@@ -131,23 +131,23 @@
   font-family: "phudu-variable", sans-serif;
   font-size: clamp(2.2rem, 6vw, 4.2rem);
   line-height: 1.05;
-  color: var(--taupe, #7c716b);
+  color: var(--lysbrun);
   margin: 0 0 0.6rem 0;
 }
 
 .ctaLead {
-  color: var(--taupe, #7c716b);
+  color: var(--lysbrun);
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   margin: 0.25rem 0 1rem;
 }
 
 .ctaSmall {
-  color: var(--taupe, #7c716b);
+  color: var(--lysbrun);
   font-size: clamp(0.95rem, 1.4vw, 1.1rem);
 }
 
 .ctaEmail {
-  color: #ff7bd0; /* pink som på dit mockup */
+  color: var(--pink); /* pink som på dit mockup */
   text-decoration: none;
   font-weight: 800;
 }

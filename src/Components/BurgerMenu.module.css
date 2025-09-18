@@ -1,3 +1,4 @@
+
 .hamburger {
   position: fixed;
   right: 36px;
@@ -17,19 +18,19 @@
 .bar {
   width: 100%;
   height: 4px;
-  background: #514944; /* lukket farve */
+  background: var(--brun);
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
 /* Hover på hele knappen ændrer ALLE streger */
 .hamburger:hover .bar {
-  background: #7c716b; /* hover farve */
+  background: var(--lysbrun);
 }
 
 /* Når menuen er åben (X-ikon), beholder stregerne hover-farven */
 .hamburger.hamburgerOpen .bar {
-  background: #7c716b; /* fastholder hover-farven indtil lukket */
+  background: var(--lysbrun);
 }
 
 /* Morphing til X når menu er åben */
@@ -66,11 +67,11 @@
 }
 
 :global(.bm-burger-bars) {
-  background: #514944;
+  background: var(--brun);
 }
 
 :global(.bm-burger-bars-hover) {
-  background: #514944;
+  background: var(--lysbrun);
 }
 
 :global(.bm-cross-button) {
@@ -80,11 +81,11 @@
   left: auto;
   position: fixed; /* så krydsikonet ligger over menuen ved åben */
   top: 36px;
-  color: antiquewhite;
+  color: var(--lyspink);
 }
 
 :global(.bm-cross) {
-  background: #efd3e3;
+  background: var(--lyspink);
 }
 
 /* Menu wrapper der indeholder sidebar */
@@ -99,20 +100,20 @@
 
 /* Selve menuen baggrund, padding etc */
 :global(.bm-menu) {
-  background: #514944;
+  background: var(--brun);
   padding: 2.5em 1em 0;
   font-size: 1.15em;
 }
 
 /* Morphen (bruges med elastic) */
 :global(.bm-morph-shape) {
-  fill: #514944;
+  fill: var(--brun);
 }
 
 /* Liste af items i menuen */
 :global(.bm-item-list) {
-  color: #efd3e3;
-  
+  color: var(--lyspink);
+
   display: flex;
   flex-direction: column;
 }
@@ -121,8 +122,7 @@
 :global(.bm-item) {
   display: block;
   text-decoration: none;
-;
-  color: #efd3e3;
+  color: var(--lyspink);
    font-family: "phudu-variable", sans-serif;
 
   font-weight: 600;
@@ -133,10 +133,10 @@
 }
 
 :global(.bm-item:hover) {
-  color: #ffffff;
+  color: color-mix(in srgb, var(--lyspink) 20%, var(--bg) 80%);
 }
 
 /* Overlay når menuen er åben */
 :global(.bm-overlay) {
-  background: #514944;
+  background: color-mix(in srgb, var(--brun) 80%, transparent);
 }

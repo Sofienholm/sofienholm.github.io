@@ -2,8 +2,8 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 2rem 20rem 4rem 1rem;
-  color: var(--ink);
-  background-color: #7c716b0d; /* meget svag taupe baggrund */
+  color: var(--brun);
+  background-color: color-mix(in srgb, var(--lysbrun) 5%, transparent);
 }
 
 .titleRow {
@@ -18,7 +18,7 @@
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: 0.02em;
   line-height: 1;
-  color: var(--accent);
+  color: var(--pink);
   font-weight: 900;
   text-transform: uppercase;
     font-family: "phudu-variable", sans-serif;
@@ -27,7 +27,7 @@
 .rule {
   height: 1px;
   flex: 1;
-  background: rgba(124, 113, 107, 0.6); /* svag taupe-linje */
+  background: color-mix(in srgb, var(--lysbrun) 60%, transparent);
 }
 
 /* SKILLS række: 4 kort på bred skærm */
@@ -46,9 +46,10 @@
 }
 
 /* Kort */
+
 .card {
   background: transparent;
-  border: 3px solid var(--border);
+  border: 3px solid var(--lysbrun);
 
   padding: 1.2rem 1.1rem;
   text-align: center;
@@ -59,13 +60,13 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--taupe);
+  color: var(--lysbrun);
 }
 
 .cardMeta {
   margin-top: 0.5rem;
   font-size: 0.78rem;
-  color: var(--taupe);
+  color: var(--lysbrun);
   opacity: 0.9;
   white-space: nowrap;
 }

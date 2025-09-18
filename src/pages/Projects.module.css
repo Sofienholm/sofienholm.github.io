@@ -10,7 +10,7 @@
   font-weight: 700;
   line-height: 0.9;
   font-size: clamp(64px, 16vw, 220px);
-  color: #514944;
+  color: var(--brun);
   position: relative;
   left: 5rem;
   z-index: 5;
@@ -37,7 +37,7 @@
   left: 28rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--brun);
   font-size: 20rem;
   letter-spacing: -0.08em;
  
@@ -63,12 +63,12 @@ z-index: -1;
 
 .copy {
   max-width: 520px;
-  color: var(--ink);
+  color: var(--brun);
 }
 .desc {
   margin: 0 0 18px;
   line-height: 1.65;
-  color: color-mix(in oklab, var(--ink) 85%, white);
+  color: var(--lysbrun);
 }
 
 .cta {
@@ -78,15 +78,15 @@ z-index: -1;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 13px;
-  color: var(--taupe);
-  border: 2px solid var(--taupe);
+  color: var(--lysbrun);
+  border: 2px solid var(--lysbrun);
   padding: 10px 14px;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 .cta:hover {
-  background: var(--taupe);
-  color: #fff;
+  background: var(--lysbrun);
+  color: var(--white);
   transform: translateY(-1px);
 }
 

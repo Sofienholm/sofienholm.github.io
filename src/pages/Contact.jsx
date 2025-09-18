@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Contact.module.css";
 
+const _motion = motion;
 const ease = { duration: 0.7, ease: [0.22, 1, 0.36, 1] };
 
 export default function Contact() {

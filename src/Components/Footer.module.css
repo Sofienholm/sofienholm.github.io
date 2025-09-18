@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 4rem 6rem;
-  background: #f8f5f3; /* baggrundsfarve */
-  color: #7c716b; /* tekstfarve */
+background: var(--bg);
+  color: var(--lysbrun);
 }
 
 .left {
@@ -22,7 +22,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #7c716b;
+  color: var(--lysbrun);
 }
 
 .mail:hover {
@@ -36,12 +36,12 @@
 
 .nav a {
   text-decoration: none;
-  color: #7c716b;
+  color: var(--lysbrun);
   font-weight: 500;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .nav a:hover {
-  border-color: #7c716b;
+  border-color: var(--lysbrun);
 }

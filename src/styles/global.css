@@ -11,6 +11,7 @@
   --bg: #f2e9e6;
   --sky: #47b8ff;
   --pink: #f38ad2;
+   --white: #ffffff;
 }
 
 html,
@@ -21,7 +22,7 @@ body {
 
 body {
   font-family: "poppins", sans-serif;
-  color: var(--ink, #514944);
+  color: var(--brun);
   line-height: 1.6;
   min-height: 100%;
   text-rendering: optimizeLegibility;
