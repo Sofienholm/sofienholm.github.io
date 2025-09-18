@@ -9,7 +9,6 @@
 }
 .top,
 .bottom {
-
   margin: 1.2rem auto 0;
   display: flex;
   gap: 1rem;
@@ -36,12 +35,18 @@
   z-index: 5;
 }
 
-.hero, .feature, .stack, .gallery {
+.hero,
+.feature,
+.stack,
+.gallery {
   max-width: 80rem;
   margin: 1.6rem auto;
   padding: 0 0 3.2rem;
 }
-.hero, .feature, .stack, .gallery {
+.hero,
+.feature,
+.stack,
+.gallery {
   max-width: 80rem;
   margin: 1.6rem auto;
   padding: 0 0 3.2rem;
@@ -86,8 +91,7 @@
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   overflow: hidden;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+
 }
 
 .featureVideoWrapper iframe {
@@ -98,7 +102,6 @@
   height: 100%;
   border: 0;
 }
-
 
 /* kode-boble (tekst) */
 .codeBubble {
@@ -149,8 +152,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  
-  
 }
 .chips li {
   border: 3px solid color-mix(in oklab, var(--ink) 18%, #fff);
@@ -164,7 +165,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .titleRow {
   display: flex;
