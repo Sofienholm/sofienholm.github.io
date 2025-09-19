@@ -1,10 +1,4 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--lysbrun);
-  color: var(--pink);
-  
-}
+
 .projectShowcase {
   padding: 3rem 20rem 8rem 20rem;
   color: var(--brun);
@@ -23,9 +17,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: -1rem;
   color: var(--brun);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.09em;
   line-height: 1;
 
 
@@ -39,12 +33,22 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.introText,
-.outroText {
-  max-width: 700px;
+.introText{
+   max-width: 700px;
   margin: 2rem auto;
   font-size: 1.4rem;
   line-height: 1.6;
+  text-align: center;
+}
+.outroText {
+  max-width: 700px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  position: relative;
+  top: -12rem;
+  margin: 0 2rem;
+  
+ 
 }
 
 .gallery {
@@ -75,14 +79,10 @@ body {
   padding: 5rem 1rem 9rem;
   display: flex;
   flex-direction: column;
-
-
   background-color: var(--bg);
   width: 40%;
   height: 10rem;
   margin: 2rem auto 2rem;
-
-  border-top: 1px solid var(--brun);
 }
 
 .alle h3 {
@@ -102,4 +102,26 @@ text-decoration: overline;
   padding: 10px 14px;
 
   transition: all 0.2s ease;
+}
+.ctaShowcase {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: var(--brun);
+  text-decoration: overline;
+  background-color: transparent;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'poppins', sans-serif;
+position: relative;
+left: 5rem;
+top: -9rem;
+
+  
+
+}
+
+.ctaShowcase:hover {
+  font-weight: 900;
 }

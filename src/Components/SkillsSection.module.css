@@ -1,10 +1,10 @@
 .wrap {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 8rem 10rem 4rem 10rem;
+  margin: 0 auto 18rem;
+  padding: 4rem 19rem 4rem 19rem;
   color: var(--brun);
   background-color: color-mix(in srgb, var(--lysbrun) 5%, transparent);
-  
+
 }
 
 .titleRow {
@@ -12,11 +12,12 @@
   align-items: center;
   gap: 1rem;
   margin: 1.25rem 0 1.25rem;
+  
 }
 
 .heading {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2rem, 4vw, 8rem);
   letter-spacing: 0.02em;
   line-height: 1;
   color: var(--pink);
@@ -37,6 +38,7 @@
   grid-template-columns: repeat(4, minmax(160px, 1fr));
   gap: 3rem;
   margin-bottom: 11rem;
+   max-width: 20rem;
 }
 
 /* TOOLS grid: 3 i første række, 2 i anden (som på billedet) */
@@ -44,6 +46,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(170px, 250px));
   gap: 3rem;
+  max-width: 50rem;
 }
 
 /* Kort */
@@ -67,9 +70,10 @@
 .cardMeta {
   margin-top: 0.5rem;
   font-size: 0.78rem;
-  color: var(--lysbrun);
-  opacity: 0.9;
+  color: var(--brun);
+
   white-space: nowrap;
+  font-weight: 200;
 }
 
 /* Responsivitet */

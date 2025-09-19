@@ -29,7 +29,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg);
-  border: 3px solid var(--brun);
+
 }
 
 a {
@@ -57,7 +57,7 @@ select {
   text-align: center;
   padding: 2rem 0 0;
   z-index: 10;
-  background-color: var(--lysbrun);
+  background-color: var(--lyspink);
   height: 13rem;
  text-align: center;
 }

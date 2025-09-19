@@ -102,8 +102,8 @@
   height: 0;
   overflow: hidden;
   border-radius: 14px; /* ← tilføj */
-  border: 3px solid var(--pink); /* ← tilføj */
-  width: 100%;
+  width: ;
+  margin: 0 auto;
 }
 .featureVideoWrapper iframe {
   /* kan styles, men ikke spillerens indre UI */
@@ -166,12 +166,9 @@
   gap: 0.5rem;
 }
 .chips li {
-  border: 3px solid var(--brun);
-  background: #e2d3cc;
-  border-radius: 5%;
+  border: 1px solid var(--brun);
   padding: 1.3rem;
   font-weight: 600;
-
   text-align: center;
   display: flex;
   align-items: center;

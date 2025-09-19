@@ -42,11 +42,11 @@ export default function BurgerMenu() {
         <NavLink to="/" end className={styles.menuItem} onClick={close}>
           Home
         </NavLink>
-        <NavLink to="/projects" className={styles.menuItem} onClick={close}>
-          Projects
-        </NavLink>
         <NavLink to="/about" className={styles.menuItem} onClick={close}>
           About
+        </NavLink>
+        <NavLink to="/projects" className={styles.menuItem} onClick={close}>
+          Projects
         </NavLink>
         <NavLink to="/contact" className={styles.menuItem} onClick={close}>
           Contact

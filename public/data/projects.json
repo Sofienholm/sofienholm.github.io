@@ -8,15 +8,16 @@
     "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "assets/BEDRBEER/3DMODEL1.png",
+      "assets/BEDRBEER/BB1.png",
       "assets/BEDRBEER/BB2.png",
       "assets/BEDRBEER/BB3.png",
-      "assets/BEDRBEER/BB4.png",
-      "assets/BEDRBEER/BB5.png",
       "assets/BEDRBEER/BB6.png",
+      "assets/BEDRBEER/BB5.png",
+      "assets/BEDRBEER/BB4.png",
       "assets/BEDRBEER/BB7.png",
       "assets/BEDRBEER/BB8.png",
       "assets/BEDRBEER/BB9.png",
+      "assets/BEDRBEER/3DMODEL1.png",
       "assets/BEDRBEER/BB10.png"
     ],
     "feature": [
@@ -45,10 +46,10 @@
     ],
     "tools": ["Figma"],
     "illustrations": [
-      "/assets/BEDRBEER/illu1.png",
+      "/assets/BEDRBEER/illu4.png",
       "/assets/BEDRBEER/illu2.png",
       "/assets/BEDRBEER/illu3.png",
-      "/assets/BEDRBEER/illu4.png",
+      "/assets/BEDRBEER/illu1.png",
       "/assets/BEDRBEER/illu5.png",
       "/assets/BEDRBEER/illu6.png"
     ]
@@ -57,7 +58,7 @@
   {
     "id": 2,
     "title": "CILLECYKLUS",
-     "title2": "CILLECYKLUS",
+    "title2": "CILLECYKLUS",
     "year": 2025,
     "image": "assets/CILLE/cille1.png",
     "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
@@ -89,7 +90,7 @@
     "illustrations": [
       "assets/CILLE/illu1.png",
       {
-        "lottie": "assets/CILLE/cycle.json",
+        "lottie": "public/data/cycle.json",
         "w": 280,
         "h": 280,
         "loop": true,
@@ -104,12 +105,16 @@
   {
     "id": 3,
     "title": "PLAKATEN",
-     "title2": "PLAKATEN",
+    "title2": "PLAKATEN",
     "year": 2025,
     "image": "assets/PLAKATEN/pla1.png",
     "description": " Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet.",
     "tags": ["Branding", "UI", "JS", "Design"],
-    "gallery": [ "assets/PLAKATEN/pla1.png", "assets/PLAKATEN/pla2.jpg", "assets/PLAKATEN/pla3.png"],
+    "gallery": [
+      "assets/PLAKATEN/pla1.png",
+      "assets/PLAKATEN/pla2.jpg",
+      "assets/PLAKATEN/pla3.png"
+    ],
     "feature": [
       {
         "title": "Responsivt layout",

@@ -254,7 +254,7 @@ export default function ProjectDetail() {
 
       <nav className={styles.bottom}>
         <Link to="/projects" className={styles.back}>
-          ← TILBAGE
+          TILBAGE
         </Link>
       </nav>
     </main>

@@ -118,7 +118,9 @@ export default function ProjectShowcase({
       <p className={styles.outroText} ref={outroRef}>
         {outroText}
       </p>
-    
+      <button type="button" className={styles.ctaShowcase}>
+        Se projekt
+      </button>
     </section>
   );
 }

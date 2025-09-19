@@ -15,7 +15,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...ease, delay: 0.05 }}
         >
-          KONTAKT
+        KONTAKT
         </motion.h1>
 
         <motion.p

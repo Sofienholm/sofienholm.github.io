@@ -2,7 +2,7 @@
 
 .contact{
   background: var(--bg);
-  min-height: 100dvh;
+
 }
 .wrap{
   max-width: 1400px;
@@ -15,38 +15,38 @@
   font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 0.9;
-  color: #ffffff;
+  color: var(--brun);
   font-size: clamp(64px, 16vw, 220px);
 }
 .subtitle{
-  margin: clamp(6px, .8vw, 12px) 0 0;
-  font-style: italic;
-  color: var(--lysbrun);
-  font-weight: 500;
-  font-size: clamp(20px, 3.8vw, 44px);
+  margin: clamp(6px, .8vw, 12px) 0 0 0.5rem;
+    font-family: 'poppins', sans-serif;
+  color: var(--pink);
+  font-weight: 700;
+  font-size: clamp(20px, 3.8vw, 30px);
 }
 .cta{
   max-width: 1600px;
-  margin: clamp(48px, 10vw, 140px) auto 0;
-  padding: 0 6vw clamp(40px, 8vw, 120px);
+  margin: 11rem auto 10rem;
+ 
+ 
 }
 .bigline{
   text-align: center;
   color: var(--brun);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: .005em;
   line-height: 1.2;
   font-size: clamp(22px, 3.8vw, 56px);
   margin: 0;
 }
 .bigline a{
-  color: var(--brun);
+  color: var(--pink);
   font-weight: 900;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
+
 }
 .bigline a:hover{
-  border-bottom-color: var(--lysbrun);
+  color: var(--lyspink);
 }
 @media (max-width: 640px){
   .wrap{ padding-top: clamp(48px, 10vw, 72px); }

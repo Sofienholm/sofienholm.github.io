@@ -30,18 +30,20 @@
 .rev {
   flex-direction: row-reverse;
   
+  
  
 }
 
 .kicker {
   position: absolute;
-  top: -26rem;
-  left: 28rem;
-  font-weight: 500;
+top: -80rem;
+  left: -10rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--brun);
-  font-size: 20rem;
+  font-size: 50rem;
   letter-spacing: -0.08em;
+
  
   font-family: "phudu-variable", sans-serif;
 z-index: -1;
@@ -51,13 +53,13 @@ z-index: -1;
 
 }
 .rev .kicker {
-  left: 0;
+  left: -10rem;
  letter-spacing: -0.08em;
   text-align: right;
 }
 
 .img {
-  width: min(44vw, 480px);
+  width: 40%;
   max-width: 100%;
   height: auto;
 
@@ -84,23 +86,19 @@ z-index: -1;
 
 }
 
+
+
+
 .cta {
   display: inline-block;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: var(--lysbrun);
-  border: 2px solid var(--lysbrun);
-  padding: 10px 14px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  padding: 0.75rem 0;
+  color: var(--brun);
+  text-decoration: overline;
+  transition: background-color 0.3s;
 }
+
 .cta:hover {
-  background: var(--lysbrun);
-  color: var(--white);
-  transform: translateY(-1px);
+  font-weight: 900;
 }
 
 /* Mobil */
