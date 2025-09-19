@@ -7,9 +7,10 @@ export default function Intro() {
       <div className={styles.introText}>
         <h2>Velkommen til</h2>
         <p>
-          Jeg er multimediedesign-studerende med en passion for frontend og et
-          kreativt øje for design. Jeg elsker at kombinere struktur og æstetik i
-          mine løsninger.
+          Jeg er en nysgerrig multimediedesign studerende med en nysgerrig
+          tilgang til både design og programmering. Jeg drives af nye
+          udfordringer og elsker at bygge ting fra bunden og finde løsninger,
+          der fungerer både visuelt og teknisk.
         </p>
         <a href="/about" className={styles.introBtn}>
           Læs mere om mig

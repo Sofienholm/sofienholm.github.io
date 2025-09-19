@@ -107,7 +107,7 @@
      "title2": "PLAKATEN",
     "year": 2025,
     "image": "assets/PLAKATEN/pla1.png",
-    "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
+    "description": " Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [ "assets/PLAKATEN/pla1.png", "assets/PLAKATEN/pla2.jpg", "assets/PLAKATEN/pla3.png"],
     "feature": [

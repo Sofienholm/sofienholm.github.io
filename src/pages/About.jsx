@@ -34,15 +34,18 @@ export default function About() {
 
           <motion.div className={styles.copy} {...fade}>
             <p>
-              Jeg bygger enkle, rolige web-oplevelser med{" "}
-              <strong>HTML, CSS, JS og React</strong>. Mit sweet spot er klar
-              typografi, simple grids og små mikroanimationer, der føles
-              naturlige.
+              Jeg er Sofie, 22 år, multimediedesign studerende med hænderne i
+              både design og programering. Jeg elsker at programere sider op fra
+              bunden og skabe smukke tekniske løsninger Når jeg først er i gang,
+              forsvinder jeg let i et projekt, og jeg går ikke videre, før
+              detaljerne sidder.
             </p>
             <p>
-              Jeg arbejder på projekter hvor <em>branding</em> og{" "}
-              <em>interface</em> hænger sammen og går efter løsninger, der er
-              lette at forstå, bruge og vedligeholde.
+              Jeg er kreativ af natur og arbejder systematisk med mine idéer,
+              fra tanke til færdigt resultat. Jeg trives i teams med tempo og
+              samarbejde, men tager også gerne selvstændigt ansvar. Mit arbejde
+              kendetegnes af struktur, sans for detaljer og en drivkraft i at
+              gøre idéer konkrete og brugbare
             </p>
 
             <div className={styles.links}>
@@ -68,9 +71,11 @@ export default function About() {
       {/* Pitch-blok (blå tekst + billede til højre) */}
       <section className={styles.pitch}>
         <motion.p className={styles.pitchText} {...fade}>
-          jeg er drevet af systemer og detaljer, og det var præcis derfor kode
-          fangede mig, at kunne tage et design og gøre det logisk, brugbart og
-          levende i browseren.
+          Jeg er nysgerrig og lærer hurtigt, især når jeg kan afprøve nye
+          teknologier. Jeg bidrager med energi og engagement i teams og nyder at
+          skabe og udvikle sammen med andre. Udenfor studiet er jeg enten med
+          venner og familie eller i gang med projekter hjemme, hvor jeg følger
+          mine idéer og bygger videre på dem.”
         </motion.p>
 
         <motion.img

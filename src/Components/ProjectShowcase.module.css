@@ -7,8 +7,8 @@ body {
 }
 .projectShowcase {
   padding: 3rem 20rem 8rem 20rem;
-  color: var(--pink);
-  background-color: var(--lysbrun);
+  color: var(--brun);
+  background-color: var(--bg);
 
   margin: 0 auto;
 
@@ -24,7 +24,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  color: var(--pink);
+  color: var(--brun);
   letter-spacing: -0.05em;
   line-height: 1;
 

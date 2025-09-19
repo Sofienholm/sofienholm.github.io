@@ -19,7 +19,10 @@ export default function Home() {
     <div>
       <Hero />
       <Intro />
-      <h2 className="new">Nye Projekter</h2>
+      <div className="new">
+        <h2>Nye Projekter</h2>
+      </div>
+
       <ProjectShowcase
         title="BEDR BEER"
         heroImg={beer1}
@@ -40,7 +43,6 @@ export default function Home() {
           Vil du se mere?
           <p>
             <NavLink to="/projects">Alle projekter</NavLink>
-            
           </p>
         </h3>
       </div>

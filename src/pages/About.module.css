@@ -2,7 +2,7 @@
 
 /* layout */
 .wrap {
-  max-width: 1100px;
+  max-width: 80rem;
   margin-inline: auto;
   padding: 5rem 1rem;
   position: relative;

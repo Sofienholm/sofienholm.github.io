@@ -11,7 +11,7 @@
   --bg: #f2e9e6;
   --sky: #47b8ff;
   --pink: #f38ad2;
-   --white: #ffffff;
+  --white: #ffffff;
 }
 
 html,
@@ -53,14 +53,20 @@ select {
   font: inherit;
 }
 .new {
-  
- margin: 0;
+  margin: 0;
   text-align: center;
-padding: 15rem 0 0;
+  padding: 2rem 0 0;
   z-index: 10;
-background-color:var(--lysbrun);
-  font-family: "phudu-variable", sans-serif;
-  font-size: 10rem;
+  background-color: var(--lysbrun);
+  height: 13rem;
+ text-align: center;
+}
+.new h2 {
+  position: relative;
+  top: -11rem;
+
+    font-family: "phudu-variable", sans-serif;
+  font-size: 13rem;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--pink);
