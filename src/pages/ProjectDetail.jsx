@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import styles from "./ProjectDetail.module.css";
+import { div } from "framer-motion/client";
 
 const toArray = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 const asFeature = (f) => (typeof f === "string" ? { image: f } : f || {});
@@ -162,13 +163,20 @@ export default function ProjectDetail() {
             )}
 
             {/* Fallback billede */}
-            {!f.video && f.image && (
+            {!f.video && f.image && 
+              <div className={styles.featureImgWrapper}>
               <img
                 className={styles.featureImg}
                 src={ensureAbs(f.image)}
                 alt={`${project.title} feature`}
               />
-            )}
+
+              <img  className={styles.pilImg}   src={ensureAbs(f.image2)}
+                alt={`${project.title} feature`}
+              />
+            
+            </div>
+            }
 
             {/* 3D model */}
             {f.model?.src && (

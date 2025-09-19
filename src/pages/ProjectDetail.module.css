@@ -61,7 +61,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 1rem;
-  align-items: center;
+  align-items: start;
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
@@ -72,6 +72,9 @@
 .hero p {
   margin: 0;
   line-height: 1.7;
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
 }
 
 .feature {
@@ -119,13 +122,14 @@
 /* kode-boble (tekst) */
 .codeBubble {
   margin: 0 0 0.8rem;
-  padding: 0.6rem 0.8rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 12px;
   background: var(--white);
   border: 1px solid var(--lysbrun);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
     monospace;
   font-size: 0.9rem;
+  line-height: 6.4;
 }
 
 /* højre side: billedkomposition */
@@ -138,7 +142,14 @@
   width: 100%;
   display: block;
 }
+.pilImg{
+  position: absolute;
+  top: 20%;
+  bottom: clamp(0.6rem, 2vw, 1rem);
+  right: -5rem;
+  width: min(40%, 360px);
 
+}
 /* kode som billede (lille badge) */
 .codeImg {
   position: absolute;

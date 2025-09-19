@@ -26,6 +26,7 @@
         "title": "3D dåse - zerobuzzbrew",
         "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
         "image": "/assets/BEDRBEER/3DMODEL2.png",
+        "image2": "/assets/provselv.svg",
         "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
         "codeImg": "/assets/BEDRBEER/code-badge.png",
         "model": {
