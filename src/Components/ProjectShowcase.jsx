@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { NavLink } from "react-router";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import styles from "./ProjectShowcase.module.css";
@@ -119,8 +120,9 @@ export default function ProjectShowcase({
         {outroText}
       </p>
       <button type="button" className={styles.ctaShowcase}>
-        Se projekt
+        <NavLink to="/projects">Alle projekter</NavLink>
       </button>
+    
     </section>
   );
 }

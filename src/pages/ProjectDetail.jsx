@@ -3,10 +3,12 @@ import { useParams, Link } from "react-router-dom";
 import styles from "./ProjectDetail.module.css";
 import { div } from "framer-motion/client";
 
+/* Helpers */
 const toArray = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 const asFeature = (f) => (typeof f === "string" ? { image: f } : f || {});
 const ensureAbs = (p) => (p?.startsWith("/") ? p : `/${p || ""}`);
 
+/* Lottie animation */
 function LottieBox({ src, w = 300, h = 300, loop = true, autoplay = true }) {
   const ref = useRef(null);
 
@@ -39,7 +41,7 @@ function LottieBox({ src, w = 300, h = 300, loop = true, autoplay = true }) {
   );
 }
 
-// Lille helper til responsive Vimeo embeds
+/* Vimeo embed */
 function VimeoEmbed({ src, title }) {
   return (
     <div className={styles.featureVideoWrapper}>
@@ -53,11 +55,12 @@ function VimeoEmbed({ src, title }) {
   );
 }
 
+/* Project detail side */
 export default function ProjectDetail() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
 
-  // Hent data
+  /* Hent projekt-data */
   useEffect(() => {
     (async () => {
       const data = await (await fetch("/data/projects.json")).json();
@@ -65,7 +68,7 @@ export default function ProjectDetail() {
     })();
   }, [id]);
 
-  // Loader <model-viewer> én gang, kun hvis nødvendig
+  /* Indlæs 3D model-viewer kun én gang */
   useEffect(() => {
     if (!customElements.get?.("model-viewer")) {
       const s = document.createElement("script");
@@ -75,6 +78,7 @@ export default function ProjectDetail() {
     }
   }, []);
 
+  /* Fallback hvis projekt ikke findes */
   if (!project) {
     return (
       <main className={styles.page}>
@@ -88,6 +92,7 @@ export default function ProjectDetail() {
     );
   }
 
+  /* Forbered data */
   const imgs = project.gallery?.length
     ? project.gallery
     : project.image
@@ -109,6 +114,7 @@ export default function ProjectDetail() {
 
   return (
     <main className={styles.page}>
+      {/* Navigation og titel */}
       <nav className={styles.top}>
         <Link to="/projects" className={styles.back}>
           TILBAGE
@@ -116,7 +122,7 @@ export default function ProjectDetail() {
         <h1 className={styles.title}>{project.title}</h1>
       </nav>
 
-      /* HERO */
+      {/* Hero sektion */}
       {imgs[0] && (
         <section className={styles.hero}>
           <img src={ensureAbs(imgs[0])} alt={project.title} />
@@ -124,7 +130,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
-      /* FEATURES */
+      {/* Feature sektion */}
       {features.map((f, i) => (
         <section key={i} className={styles.feature}>
           {f.title && (
@@ -163,22 +169,22 @@ export default function ProjectDetail() {
             )}
 
             {/* Fallback billede */}
-            {!f.video && f.image && 
+            {!f.video && f.image && (
               <div className={styles.featureImgWrapper}>
-              <img
-                className={styles.featureImg}
-                src={ensureAbs(f.image)}
-                alt={`${project.title} feature`}
-              />
+                <img
+                  className={styles.featureImg}
+                  src={ensureAbs(f.image)}
+                  alt={`${project.title} feature`}
+                />
+                <img
+                  className={styles.pilImg}
+                  src={ensureAbs(f.image2)}
+                  alt={`${project.title} feature`}
+                />
+              </div>
+            )}
 
-              <img  className={styles.pilImg}   src={ensureAbs(f.image2)}
-                alt={`${project.title} feature`}
-              />
-            
-            </div>
-            }
-
-            /* 3D model */
+            {/* 3D model */}
             {f.model?.src && (
               <model-viewer
                 className={styles.model}
@@ -197,7 +203,7 @@ export default function ProjectDetail() {
         </section>
       ))}
 
-      /* STACK */
+      {/* Stack sektion */}
       {(stack.length || illustrations.length) && (
         <section className={styles.stack}>
           <div className={styles.titleRow}>
@@ -242,6 +248,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
+      {/* Galleri */}
       {!!rest.length && (
         <section className={styles.gallery}>
           <div className={styles.titleRow}>
@@ -260,6 +267,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
+      {/* Bundnavigation */}
       <nav className={styles.bottom}>
         <Link to="/projects" className={styles.back}>
           TILBAGE
