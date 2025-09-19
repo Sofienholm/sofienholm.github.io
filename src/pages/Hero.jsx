@@ -4,6 +4,7 @@ import imgBike from "../assets/bike.jpg";
 import imgPortrait from "../assets/potrait.png";
 import imgNotebook from "../assets/notebook.jpg";
 import imgLaptop from "../assets/laptop.jpg";
+import arrow from from "../Components/Arrow";
 
 const _motion = motion; 
 
@@ -113,6 +114,9 @@ export default function Hero() {
         >
           Frontend med øje for detaljen og styr på strukturen.
         </motion.p>
+      
+        <arrow />
+       
       </div>
     </section>
   );
