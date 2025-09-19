@@ -90,7 +90,7 @@
     "illustrations": [
       "assets/CILLE/illu1.png",
       {
-        "lottie": "public/data/cycle.json",
+        "lottie": "data/cycle.json",
         "w": 280,
         "h": 280,
         "loop": true,
