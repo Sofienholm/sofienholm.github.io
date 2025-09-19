@@ -116,7 +116,7 @@ export default function ProjectDetail() {
         <h1 className={styles.title}>{project.title}</h1>
       </nav>
 
-      {/* HERO */}
+      /* HERO */
       {imgs[0] && (
         <section className={styles.hero}>
           <img src={ensureAbs(imgs[0])} alt={project.title} />
@@ -124,7 +124,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
-      {/* FEATURES */}
+      /* FEATURES */
       {features.map((f, i) => (
         <section key={i} className={styles.feature}>
           {f.title && (
@@ -178,7 +178,7 @@ export default function ProjectDetail() {
             </div>
             }
 
-            {/* 3D model */}
+            /* 3D model */
             {f.model?.src && (
               <model-viewer
                 className={styles.model}
@@ -197,7 +197,7 @@ export default function ProjectDetail() {
         </section>
       ))}
 
-      {/* STACK */}
+      /* STACK */
       {(stack.length || illustrations.length) && (
         <section className={styles.stack}>
           <div className={styles.titleRow}>

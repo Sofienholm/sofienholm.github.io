@@ -23,10 +23,10 @@
   height: 0;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
-  border-right: 15px solid currentColor; /* trekant i tekstens farve */
+  border-right: 15px solid currentColor; 
   margin-right: 0.6rem;
   margin-left: 2rem;
-  transform: translateY(2px); /* juster lodret position */
+  transform: translateY(2px);
 }
 
 .title {
@@ -96,7 +96,7 @@
 }
 .videoGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* to ved siden af hinanden */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 0.8rem;
 }
 .featureVideoWrapper {
@@ -104,22 +104,21 @@
  
   height: 30rem;
   overflow: hidden;
-  border-radius: 14px; /* ← tilføj */
   width: 100%;
   margin: 0 auto;
 }
 .featureVideoWrapper iframe {
-  /* kan styles, men ikke spillerens indre UI */
+ 
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
  
   border: 0;
-  border-radius: 14px; /* match wrapper */
+  border-radius: 14px;
 }
 
-/* kode-boble (tekst) */
+
 .codeBubble {
   margin: 0 0 0.8rem;
   padding: 0.6rem 0.6rem;
@@ -132,7 +131,7 @@
   line-height: 6.4;
 }
 
-/* højre side: billedkomposition */
+
 .featureVisual {
   position: relative;
 
@@ -150,7 +149,7 @@
   width: min(40%, 360px);
 
 }
-/* kode som billede (lille badge) */
+
 .codeImg {
   position: absolute;
   top: clamp(0.6rem, 2vw, 1rem);
@@ -160,7 +159,7 @@
   box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
 }
 
-/* 3D model – “skaleret helt ned” og svævende */
+
 .model {
   position: absolute;
   right: 16rem;
