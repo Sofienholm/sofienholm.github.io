@@ -57,7 +57,7 @@ export default function Projects() {
                  {p.title2}
               </div>
              
-              <p className={styles.desc}>{p.description}</p>
+              <p className={styles.desc}>{p.intro}</p>
               <NavLink to={`/projects/${p.id}`} className={styles.cta}>
                 SE DETALJER
               </NavLink>

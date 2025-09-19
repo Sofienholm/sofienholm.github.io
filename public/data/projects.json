@@ -5,7 +5,8 @@
     "title2": "BEDRBEER",
     "year": 2025,
     "image": "assets/BEDRBEER/BB1.png",
-    "description": " Et UX/UI-projekt hvor vi udviklede brandidentitet og digital prototype til et fiktivt bryggeri med fokus på alkoholfri øl. Målet var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge. Projektet omfattede research, brandudvikling, designmanual, prototyping og kodning i HTML, CSS og JavaScript.",
+    "intro": "Et bryggeriunivers med kant og energi, hvor alkoholfri øl præsenteres som et attraktivt valg. Her møder du en digital prototype med levende farver, små animationer og et brand, der tør vise, at øl uden alkohol kan være både sjovt og socialt inkluderende.",
+    "description": " BEDR BEER er et UX/UI-projekt, hvor vi udviklede en brandidentitet og digital prototype for et fiktivt bryggeri med fokus på alkoholfri øl. Opgaven var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge gennem research, brandudvikling, design og kodning. Vi arbejdede ud fra Double Diamond-modellen med både interviews, spørgeskemaer og netnografi, og vi byggede identiteten op med farver, logo og infografik, der præsenterer produktet på en frisk og gennemsigtig måde. Resultatet blev en interaktiv prototype med parallax-effekter, animationer og et visuelt univers, der forbinder design og kode til en samlet oplevelse.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
       "assets/BEDRBEER/BB1.png",
@@ -23,7 +24,7 @@
     "feature": [
       {
         "title": "3D dåse - zerobuzzbrew",
-        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv – og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
+        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
         "image": "/assets/BEDRBEER/3DMODEL2.png",
         "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
         "codeImg": "/assets/BEDRBEER/code-badge.png",
@@ -61,7 +62,8 @@
     "title2": "CILLECYKLUS",
     "year": 2025,
     "image": "assets/CILLE/cille1.png",
-    "description": " En interaktiv digital løsning, der gør menstruationscyklussen let at forstå gennem visuel storytelling og brugerinvolvering. Projektet kombinerer design, animation og kodning for at skabe en engagerende oplevelse.",
+    "intro":"Et digitalt univers, hvor børn lærer om kroppen gennem farver, bevægelse og interaktivitet. Her bliver menstruationscyklussen til en oplevelse, man kan udforske selv, i stedet for en tør forklaring på tekst og tal.",
+    "description": " Cillecyklus er et interaktivt læringsunivers skabt til Steno Museet i Aarhus. Opgaven var at formidle menstruationscyklussen til børn på en måde, der både er lærerig og engagerende. Vi kombinerede research, storytelling og interaktive elementer for at give brugeren mulighed for selv at udforske de fire faser. Designet er bygget op omkring farver, ikoner og animationer, hvor hver fase har sit eget udtryk. Jeg arbejdede med idéudvikling, visuel identitet og kodning af de centrale funktioner, så viden om kroppen bliver let at forstå og mere interessant at gå på opdagelse i.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
       "assets/CILLE/cille2.jpg",
@@ -72,8 +74,8 @@
     ],
     "feature": [
       {
-        "title": "Responsivt layout",
-        "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
+        "title": "Interaktiv flow",
+        "text": "Den centrale funktion er en interaktiv bold, som kan flyttes mellem de fire faser. Når bolden placeres på en fase, vokser den, viser “OPLEV” og åbner for mere viden. Det skaber et flow, hvor brugeren oplever cyklussen som en levende og sammenhængende helhed. ",
         "video": "https://player.vimeo.com/video/1119739134?autoplay=1&loop=1&title=0&byline=0&portrait=0"
       }
     ],
@@ -108,7 +110,8 @@
     "title2": "PLAKATEN",
     "year": 2025,
     "image": "assets/PLAKATEN/pla1.png",
-    "description": " Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet.",
+    "intro": "Fra fysisk butik til digital oplevelse – en webshop med fokus på brugervenlighed, inspiration og mobilvenlighed. Resultatet er en løsning, hvor kunderne nemt kan gå på opdagelse i plakater og rammer, uanset om de shopper fra sofaen eller på farten.",
+    "description": "Dette handlede om at skabe et responsivt webdesign-projekt for virksomheden Plakaten, med fokus på mobile-first og responsivt design. Opgaven var at gøre det lettere og mere inspirerende at udforske sortimentet af plakater og rammer online. Vi indsamlede indsigter via interviews og observationer i butikken og byggede løsningen op med personas og Value Proposition Canvas. Designet blev minimalistisk med plads til produkterne, understøttet af filtrering og inspirationssider. Vi arbejdede med research, UX-design og kodning i HTML/CSS, hvor vi fik bygge et responsivt layout, der fungerer på både mobil, tablet og desktop.",
     "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
       "assets/PLAKATEN/pla1.png",
@@ -118,7 +121,7 @@
     "feature": [
       {
         "title": "Responsivt layout",
-        "text": "Et responsivt webdesign-projekt for virksomheden Plakaten, hvor fokus var at skabe en brugervenlig oplevelse med mobile-first tilgang. Projektet kombinerede UX-research, interviews, design og kodning for at optimere både funktionalitet og visuel identitet. ",
+        "text": "Projektets kerne lå i at skabe et responsivt site, der skalerer gnidningsfrit på tværs af skærmstørrelser. Alt fra layout til billeder blev optimeret, så brugeroplevelsen er konsistent og indbydende uanset enhed.",
         "video": [
           "https://player.vimeo.com/video/1119738996?autoplay=1&loop=1&title=0&byline=0&portrait=0",
           "https://player.vimeo.com/video/1119738981?autoplay=1&loop=1&title=0&byline=0&portrait=0"
