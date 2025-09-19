@@ -43,6 +43,13 @@
   
   box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
+.arrowww{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -12rem;
+  top:-25rem;
+}
 
 /* Tablet/Desktop collage */
 @media (min-width: 700px) {

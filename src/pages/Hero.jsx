@@ -4,9 +4,9 @@ import imgBike from "../assets/bike.jpg";
 import imgPortrait from "../assets/potrait.png";
 import imgNotebook from "../assets/notebook.jpg";
 import imgLaptop from "../assets/laptop.jpg";
-import arrow from from "../Components/Arrow";
+import Arrow from "../Components/Arrow";
 
-const _motion = motion; 
+const _motion = motion;
 
 export default function Hero() {
   // Titlen: ease matcher din CodePen-vibe
@@ -114,9 +114,15 @@ export default function Hero() {
         >
           Frontend med øje for detaljen og styr på strukturen.
         </motion.p>
-      
-        <arrow />
-       
+
+        <motion.p
+          className={styles.arrowww}
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 2.1, ease }}
+        >
+          <Arrow />
+        </motion.p>
       </div>
     </section>
   );
