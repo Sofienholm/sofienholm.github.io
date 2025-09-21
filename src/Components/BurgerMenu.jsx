@@ -40,16 +40,16 @@ export default function BurgerMenu() {
         itemListClassName={styles.menuList}
       >
         <NavLink to="/" end className={styles.menuItem} onClick={close}>
-          Home
+          Hjem
         </NavLink>
         <NavLink to="/about" className={styles.menuItem} onClick={close}>
-          About
+          Om mig
         </NavLink>
         <NavLink to="/projects" className={styles.menuItem} onClick={close}>
-          Projects
+          Projekter
         </NavLink>
         <NavLink to="/contact" className={styles.menuItem} onClick={close}>
-          Contact
+          Kontakt
         </NavLink>
       </Menu>
     </>
