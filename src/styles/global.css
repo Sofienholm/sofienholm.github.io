@@ -18,7 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,7 +29,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg);
-
 }
 
 a {
@@ -59,13 +58,13 @@ select {
   z-index: 10;
   background-color: var(--lyspink);
   height: 13rem;
- text-align: center;
+  text-align: center;
 }
 .new h2 {
   position: relative;
   top: -11rem;
 
-    font-family: "phudu-variable", sans-serif;
+  font-family: "phudu-variable", sans-serif;
   font-size: 13rem;
   font-weight: 800;
   text-transform: uppercase;
