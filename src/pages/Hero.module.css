@@ -107,3 +107,16 @@
   font-size: clamp(1rem, 2vw, 1.6rem); 
   color: var(--skifer); 
 }
+  /* Placering af billeder */
+  .portrait { grid-area: 1 / 3 / 7 / 6; aspect-ratio: 3 / 4; }
+  .topRight { grid-area: 2 / 9 / 6 / 11; aspect-ratio: 4 / 4; }
+  .midRight { grid-area: 3 / 6 / 5 / 8;  aspect-ratio: 4 / 6; }
+  .bottom { 
+    grid-area: 3 / 7 / 6 / 9;  
+    aspect-ratio: 2 / 3;   
+    transform: translateX(30%);   
+    width: 90%;           
+    justify-self: center;  
+    margin-left: 6rem; 
+    margin-top: 5rem; 
+  }

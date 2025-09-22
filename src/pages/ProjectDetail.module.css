@@ -13,7 +13,7 @@
   color: var(--pink);
   font-weight: 600;
   width: max-content;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   align-items: start;
 }
 .back::before {
@@ -23,7 +23,7 @@
   height: 0;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
-  border-right: 15px solid currentColor; 
+  border-right: 15px solid currentColor;
   margin-right: 0.6rem;
   margin-left: 2rem;
   transform: translateY(2px);
@@ -66,13 +66,15 @@
   margin-bottom: 10rem;
 }
 .hero img {
-  width: 70rem;
+  width: 100%;
+  max-width: 70rem;
   display: block;
+  height: auto;
 }
 .hero p {
   margin: 0;
   line-height: 1.7;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: clamp(1rem, 1.6vw, 1.25rem);
 }
@@ -96,28 +98,26 @@
 }
 .videoGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.8rem;
 }
 .featureVideoWrapper {
   position: relative;
- 
+
   height: 30rem;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
 }
 .featureVideoWrapper iframe {
- 
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
- 
+
   border: 0;
   border-radius: 14px;
 }
-
 
 .codeBubble {
   margin: 0 0 0.8rem;
@@ -131,7 +131,6 @@
   line-height: 6.4;
 }
 
-
 .featureVisual {
   position: relative;
 
@@ -141,13 +140,12 @@
   width: 100%;
   display: block;
 }
-.pilImg{
+.pilImg {
   position: absolute;
   top: 20%;
   bottom: clamp(0.6rem, 2vw, 1rem);
   right: -5rem;
   width: min(40%, 360px);
-
 }
 
 .codeImg {
@@ -158,7 +156,6 @@
   border-radius: 12px;
   box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
 }
-
 
 .model {
   position: absolute;
@@ -213,12 +210,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;
   justify-items: center;
-  
 }
 .illus img {
   transition: transform 0.3s ease;
   cursor: pointer;
-
 }
 
 .illus img:active {
@@ -239,7 +234,15 @@
 }
 
 @media (max-width: 980px) {
-  .hero,
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .hero img {
+    max-width: min(100%, 48rem);
+  }
   .feature {
     grid-template-columns: 1fr;
   }
@@ -268,6 +271,14 @@
   }
 }
 @media (max-width: 560px) {
+  .hero {
+    padding: 0 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .hero img {
+    max-width: 100%;
+  }
   .illus {
     grid-template-columns: 1fr;
   }
