@@ -20,12 +20,19 @@ export default function ProjectShowcase({
   const outroRef = useRef(null);
 
   useEffect(() => {
-    const lenis = new Lenis();
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+    if (typeof window === "undefined") {
+      return undefined;
     }
-    requestAnimationFrame(raf);
+
+    const lenis = new Lenis();
+    let animationFrameId = null;
+
+    const raf = (time) => {
+      lenis.raf(time);
+      animationFrameId = window.requestAnimationFrame(raf);
+    };
+
+    animationFrameId = window.requestAnimationFrame(raf);
 
     // Hero fade in
     gsap.fromTo(
@@ -92,6 +99,13 @@ export default function ProjectShowcase({
         },
       }
     );
+
+    return () => {
+      if (animationFrameId !== null) {
+        window.cancelAnimationFrame(animationFrameId);
+      }
+      lenis.destroy();
+    };
   }, []);
 
   return (
@@ -122,7 +136,6 @@ export default function ProjectShowcase({
       <button type="button" className={styles.ctaShowcase}>
         <NavLink to="/projects">Alle projekter</NavLink>
       </button>
-    
     </section>
   );
 }
