@@ -1,64 +1,53 @@
-
 .projectShowcase {
-  padding: 3rem 20rem 8rem 20rem;
+  padding: 2rem 1rem 4rem;
   color: var(--brun);
   background-color: var(--bg);
-
   margin: 0 auto;
-
 }
 
+/* Titel */
 .projectTitle {
-  font-size: 10rem;
+  font-size: clamp(2.2rem, 8vw, 10rem);
   font-weight: 500;
   text-transform: uppercase;
   font-family: "phudu-variable", sans-serif;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -1rem;
-  color: var(--brun);
-  letter-spacing: -0.09em;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
   line-height: 1;
-
-
+  color: var(--brun);
 }
 
+/* Hero-billede */
 .heroImage img {
   width: 100%;
-  max-height: 600px;
+  max-height: 400px;
   object-fit: cover;
   margin-bottom: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.introText{
-   max-width: 700px;
+/* Intro & Outro tekst */
+.introText,
+.outroText {
+  max-width: 90%;
   margin: 2rem auto;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.6;
   text-align: center;
-}
-.outroText {
-  max-width: 700px;
-  font-size: 1.4rem;
-  line-height: 1.6;
-  position: relative;
-  top: -12rem;
-  margin: 0 2rem;
-  
- 
+  position: static; /* ingen overlap på mobil */
 }
 
 .gallery {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .galleryItem {
-  flex: 1 1 calc(25% - 1rem);
+  flex: 1 1 calc(50% - 0.5rem); /* 2 kolonner på mobil */
   overflow: hidden;
 }
 
@@ -68,21 +57,42 @@
   object-fit: cover;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .galleryItem img:hover {
   filter: grayscale(0%);
 }
+
+/* CTA */
+.ctaShowcase {
+  display: block;
+  margin: 3rem auto 0;
+  padding: 0.75rem 1.5rem;
+  color: var(--pink);
+  text-decoration: overline;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "poppins", sans-serif;
+  position: static; /* ingen offset på mobil */
+}
+
+.ctaShowcase:hover {
+  font-weight: 900;
+}
 .alle{
   text-align: center;
-  padding: 5rem 1rem 9rem;
+
   display: flex;
   flex-direction: column;
   background-color: var(--bg);
-  width: 40%;
+
   height: 10rem;
-  margin: 2rem auto 2rem;
+  margin: 3rem auto 5rem;
 }
 
 .alle h3 {
@@ -99,29 +109,56 @@ text-decoration: overline;
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--pink);
-  padding: 10px 14px;
+  padding: 10px auto;
 
   transition: all 0.2s ease;
 }
-.ctaShowcase {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  color: var(--brun);
-  text-decoration: overline;
-  background-color: transparent;
-  border: none;
-  font-size: 1.7rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'poppins', sans-serif;
-position: relative;
-left: 5rem;
-top: -9rem;
 
-  
+/* ===== Tablet og op (>=700px) ===== */
+@media (min-width: 700px) {
+  .projectShowcase {
+    padding: 3rem 4rem 6rem;
+  }
 
+  .projectTitle {
+    font-size: clamp(3rem, 8vw, 6rem);
+  }
+
+  .galleryItem {
+    flex: 1 1 calc(33.333% - 1rem); /* 3 kolonner */
+  }
+
+  .ctaShowcase {
+    font-size: 1.5rem;
+  }
 }
 
-.ctaShowcase:hover {
-  font-weight: 900;
+/* ===== Desktop større skærme (>=1200px) ===== */
+@media (min-width: 1200px) {
+  .projectShowcase {
+    padding: 3rem 20rem 8rem 20rem;
+  }
+
+  .projectTitle {
+    font-size: 10rem;
+  }
+
+  .heroImage img {
+    max-height: 600px;
+  }
+
+  .introText,
+  .outroText {
+    max-width: 700px;
+    font-size: 1.4rem;
+  }
+
+  .galleryItem {
+    flex: 1 1 calc(25% - 1rem); /* 4 kolonner */
+  }
+
+  
+  .alle{
+    margin-bottom: 15rem;
+  }
 }

@@ -2,7 +2,7 @@
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 90vh;
+  min-height: 10vh;
   padding: 2rem 1rem 6rem;
   position: relative;
   text-align: center;
@@ -79,11 +79,17 @@
 
 /* ===== Tablet og op (>=700px) ===== */
 @media (min-width: 700px) {
+ .hero{
+     margin: 0 3rem;
+   min-height: 0;
+
+ }
   .grid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(7, 8vw);
     gap: 1.25rem;
     width: 100%;
+    
   }
 
   /* Placering af billeder */
@@ -123,7 +129,7 @@
   .arrowww {
     position: absolute;
     top: -11rem;
-    left: 0rem;
+    left: -1rem;
   }
 }
 
@@ -133,6 +139,7 @@
     grid-template-rows: repeat(7, 6.5rem);
   }
    .arrowww {
-    top: -27rem;
+    top: -25.5rem;
+    left: 0;
   }
 }
