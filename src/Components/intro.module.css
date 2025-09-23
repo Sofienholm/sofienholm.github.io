@@ -41,8 +41,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  display: flex;
-  align-items: center;
+  max-width: 48rem;
 }
 
 .introImage img {
