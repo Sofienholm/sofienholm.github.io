@@ -1,93 +1,79 @@
-
-
 .section {
   background: var(--bg);
   padding: clamp(32px, 5vw, 72px) 20px 80px;
 }
+
 .headline {
   font-family: "phudu-variable", sans-serif;
-  margin: 0 0 15rem;
+  margin: 0 0 4rem;
   font-weight: 700;
   line-height: 0.9;
-  font-size: clamp(64px, 16vw, 220px);
-  color: var(--pink
-  );
-  position: relative;
-  left: 5rem;
+  font-size: clamp(2.5rem, 16vw, 6rem);
+  color: var(--pink);
+  text-align: center;
+  position: static; /* mobil = ingen offset */
   z-index: 5;
 }
 
 .row {
-  position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column; /* mobil = stacked */
+  gap: 1.5rem;
   max-width: 100rem;
-  padding-bottom: 17rem;
-  margin: 2rem auto;
+  margin: 2rem auto 6rem;
+  padding-bottom: 4rem;
+  position: relative;
   z-index: 10;
 }
+
 .rev {
-  flex-direction: row-reverse;
-  
-  
- 
+  flex-direction: column; /* mobil = stadig column */
 }
 
 .kicker {
-  position: absolute;
-top: -80rem;
-  left: -10rem;
+  position: static; /* mobil = normal tekst */
+  margin-bottom: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--brun);
-  font-size: 50rem;
-  letter-spacing: -0.08em;
-
- 
+  font-size: clamp(2rem, 10vw, 4rem);
+  letter-spacing: -0.02em;
   font-family: "phudu-variable", sans-serif;
-z-index: -1;
-  opacity: 0.04 !important; 
-  
-
-
-}
-.rev .kicker {
-  left: -10rem;
- letter-spacing: -0.08em;
-  text-align: right;
+  opacity: 0.2;
+  z-index: -1;
+  text-align: left;
 }
 
 .img {
-  width: 40%;
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
   height: auto;
-
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .copy {
-  max-width: 520px;
+  width: 100%;
+  max-width: none;
   color: var(--brun);
 }
+
 .title2 {
   margin: 0 0 12px;
-  font-size: 40px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
   line-height: 1.2;
   font-family: "phudu-variable", sans-serif;
 }
-.desc, .intro {
+
+.desc,
+.intro {
   margin: 0 0 18px;
   line-height: 1.65;
   color: var(--brun);
-    font-size: 18px;
-    font-weight: 600;
-
+  font-size: 1rem;
+  font-weight: 600;
 }
-
-
-
 
 .cta {
   display: inline-block;
@@ -101,26 +87,66 @@ z-index: -1;
   font-weight: 900;
 }
 
-/* Mobil */
-@media (max-width: 860px) {
+/* ===== Tablet og op (>=700px) ===== */
+@media (min-width: 700px) {
+  .headline {
+    margin-bottom: 8rem;
+    text-align: left;
+    position: relative;
+    left: 2rem;
+  }
+
   .row {
-    flex-direction: column;
-    gap: 18px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 8rem;
   }
+
   .rev {
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
+
   .kicker {
-    position: static;
-    margin-bottom: 6px;
-    text-align: left;
+    position: absolute;
+    top: -20rem;
+    left: -5rem;
+    font-size: clamp(6rem, 15vw, 12rem);
+    opacity: 0.06;
+    z-index: -1;
   }
-  .rev .kicker {
-    text-align: left;
+}
+
+/* ===== Desktop større skærme (>=1200px) ===== */
+@media (min-width: 1200px) {
+  .headline {
+    font-size: 220px;
+    left: 5rem;
+    margin-bottom: 15rem;
   }
-  .img,
+
+  .row {
+    padding-bottom: 17rem;
+  }
+
+  .kicker {
+    top: -80rem;
+    left: -10rem;
+    font-size: 50rem;
+    letter-spacing: -0.08em;
+    opacity: 0.04 !important;
+  }
+
+  .img {
+    width: 40%;
+  }
+
   .copy {
-    width: 100%;
-    max-width: none;
+    max-width: 520px;
+  }
+
+  .desc,
+  .intro {
+    font-size: 18px;
   }
 }
