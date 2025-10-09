@@ -335,10 +335,11 @@
     top: 20%;
     right: -5rem;
     width: min(40%, 360px);
+
   }
   .feature.bedrbeer .codeImg {
     position: absolute;
-    top: 1rem;
+    top: -rem;
     left: 1rem;
     width: min(40%, 260px);
   }
