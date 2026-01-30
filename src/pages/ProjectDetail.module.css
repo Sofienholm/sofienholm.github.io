@@ -2,6 +2,12 @@
   color: var(--brun);
 }
 
+/* 👇 NYT: tom class, så vi kan scope case-styling via .kogebog ... */
+.kogebog {}
+
+/* 👇 NYT: tom class til din eksisterende selector-idé */
+.bedrbeer {}
+
 /* === Top === */
 .top,
 .bottom {
@@ -76,6 +82,7 @@
   max-width: 1200px;
   align-items: stretch;
 }
+
 .featureText {
   display: flex;
   flex-direction: column;
@@ -87,14 +94,21 @@
   line-height: 1.7;
 }
 
+/* 👇 NYT: wrapper du bruger i JSX */
+.featureImgWrapper {
+  position: relative;
+}
+
 .featureVisual {
   position: static;
   padding: 0.8rem;
 }
+
 .featureImg {
   width: 100%;
   display: block;
 }
+
 .pilImg {
   position: absolute;
   bottom: 1rem;
@@ -114,12 +128,12 @@
 .model {
   position: absolute;
   right: 7rem;
-
   bottom: -2rem;
   width: 4rem;
   height: 15rem;
   rotate: 35deg;
 }
+
 .codeBubble {
   margin: 0 auto 0.8rem;
   padding: 0.6rem 0.6rem;
@@ -210,6 +224,13 @@
   z-index: 2;
 }
 
+/* === Stack === */
+/* 👇 NYT: du bruger styles.stack i JSX */
+.stack {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+}
+
 /* === Gallery === */
 .gallery {
   margin-top: 4rem;
@@ -224,6 +245,28 @@
 .gallery img {
   width: 100%;
   display: block;
+}
+
+/* =========================
+   ✅ KUN MIN KOGEBOG STYLING
+   ========================= */
+
+
+.kogebog .featureImg {
+  max-width: 50vw;       /* feature-billeder lidt mindre og pænere */
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
+}
+
+.kogebog .galleryGrid {
+  grid-template-columns: repeat(3, 1fr); /* kogebog: mere “grid” */
+}
+
+.kogebog .illus img {
+  border-radius: 14px;
+  width: 19vw;
+  box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
 }
 
 /* ===== Tablet og op (>=700px) ===== */
@@ -285,10 +328,17 @@
   .galleryGrid {
     grid-template-columns: repeat(1.5, 1fr);
   }
+
   .model {
     width: 6rem;
     bottom: 2rem;
     right: 13rem;
+  }
+
+  /* kogebog tweak på tablet: hold hero small & centered */
+
+  .kogebog .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -321,6 +371,7 @@
     line-height: 1.4;
     height: 2rem;
   }
+
   /* Eksempel: særregler til BedrBeer */
   .model {
     position: absolute;
@@ -330,19 +381,22 @@
     height: 15rem;
     rotate: 35deg;
   }
+
+  /* 👇 din gamle selector virkede ikke før – nu gør den (bedrbeer class findes) */
   .feature.bedrbeer .pilImg {
     position: absolute;
     top: 20%;
     right: -5rem;
     width: min(40%, 360px);
-
   }
+
   .feature.bedrbeer .codeImg {
     position: absolute;
     top: -rem;
     left: 1rem;
     width: min(40%, 260px);
   }
+
   /* === Titles + rules === */
   .titleRow {
     margin: 0 4rem 1rem;
@@ -358,4 +412,6 @@
   .galleryGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+
 }

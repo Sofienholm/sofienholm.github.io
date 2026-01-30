@@ -92,12 +92,24 @@ export default function ProjectDetail() {
     );
   }
 
+  /* 👇 NYT: case-specifik class */
+  const isKogebog =
+    project.slug === "min-kogebog" ||
+    (project.title || "").toLowerCase().includes("kogebog") ||
+    (project.title2 || "").toLowerCase().includes("kogebog");
+
+  const isBedrBeer =
+    project.slug === "bedr-beer" ||
+    (project.title || "").toLowerCase().includes("bedr") ||
+    (project.title2 || "").toLowerCase().includes("bedr");
+
   /* Forbered data */
   const imgs = project.gallery?.length
     ? project.gallery
     : project.image
     ? [project.image]
     : [];
+
   let features = toArray(project.feature).map(asFeature);
   if (!features.length && imgs[1]) features = [{ image: imgs[1] }];
 
@@ -105,6 +117,7 @@ export default function ProjectDetail() {
     ...(project.tech || project.tags || []),
     ...(project.tools || []),
   ];
+
   const illustrations = toArray(project.illustrations);
 
   const used = new Set(
@@ -113,7 +126,9 @@ export default function ProjectDetail() {
   const rest = imgs.filter((im) => im !== imgs[0] && !used.has(im));
 
   return (
-    <main className={styles.page}>
+    <main
+      className={`${styles.page} ${isKogebog ? styles.kogebog : ""}`}
+    >
       {/* Navigation og titel */}
       <nav className={styles.top}>
         <Link to="/projects" className={styles.back}>
@@ -132,7 +147,10 @@ export default function ProjectDetail() {
 
       {/* Feature sektion */}
       {features.map((f, i) => (
-        <section key={i} className={styles.feature}>
+        <section
+          key={i}
+          className={`${styles.feature} ${isBedrBeer ? styles.bedrbeer : ""}`}
+        >
           {f.title && (
             <div className={styles.titleRow}>
               <h3>{f.title}</h3>
@@ -176,11 +194,13 @@ export default function ProjectDetail() {
                   src={ensureAbs(f.image)}
                   alt={`${project.title} feature`}
                 />
-                <img
-                  className={styles.pilImg}
-                  src={ensureAbs(f.image2)}
-                  alt={`${project.title} feature`}
-                />
+                {f.image2 && (
+                  <img
+                    className={styles.pilImg}
+                    src={ensureAbs(f.image2)}
+                    alt={`${project.title} feature`}
+                  />
+                )}
               </div>
             )}
 
@@ -210,6 +230,7 @@ export default function ProjectDetail() {
             <h3>Anvendte teknologier & værktøjer</h3>
             <span className={styles.rule} />
           </div>
+
           {!!stack.length && (
             <ul className={styles.chips}>
               {stack.map((x) => (
@@ -217,6 +238,7 @@ export default function ProjectDetail() {
               ))}
             </ul>
           )}
+
           {!!illustrations.length && (
             <div className={styles.illus}>
               {illustrations.map((item, n) => {

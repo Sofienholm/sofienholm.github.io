@@ -30,41 +30,42 @@ export default function Projects() {
         PROJEKTER
       </motion.h2>
 
-      {projects.map((p, i) => {
-        const hero = ensureAbs(p.image ?? p.gallery?.[0]);
+      {[...projects]
+        .sort((a, b) => b.year - a.year)
+        .map((p, i) => {
+          const hero = ensureAbs(p.image ?? p.gallery?.[0]);
 
-        return (
-          <div
-            key={p.id}
-            className={`${styles.row} ${i % 2 ? styles.rev : ""}`}
-          >
-            {/* blå "svævende" titel */}
-            <motion.h3 className={styles.kicker} {...fade}>
-              {p.title}
-            </motion.h3>
+          return (
+            <div
+              key={p.id}
+              className={`${styles.row} ${i % 2 ? styles.rev : ""}`}
+            >
+              {/* blå "svævende" titel */}
+              <motion.h3 className={styles.kicker} {...fade}>
+                {p.title}
+              </motion.h3>
 
-            {hero && (
-              <motion.img
-                className={styles.img}
-                src={hero}
-                alt={p.title}
-                {...fade}
-              />
-            )}
+              {hero && (
+                <motion.img
+                  className={styles.img}
+                  src={hero}
+                  alt={p.title}
+                  {...fade}
+                />
+              )}
 
-            <motion.div className={styles.copy} {...fade}>
-              <div className={styles.title2}>
-                 {p.title2}
-              </div>
-             
-              <p className={styles.desc}>{p.intro}</p>
-              <NavLink to={`/projects/${p.id}`} className={styles.cta}>
-                SE DETALJER
-              </NavLink>
-            </motion.div>
-          </div>
-        );
-      })}
+              <motion.div className={styles.copy} {...fade}>
+                <div className={styles.title2}>{p.title2}</div>
+
+                <p className={styles.desc}>{p.intro}</p>
+
+                <NavLink to={`/projects/${p.id}`} className={styles.cta}>
+                  SE DETALJER
+                </NavLink>
+              </motion.div>
+            </div>
+          );
+        })}
     </section>
   );
 }

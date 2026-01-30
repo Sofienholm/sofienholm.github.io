@@ -1,62 +1,50 @@
 [
   {
     "id": 1,
-    "title": "BEDRBEER",
-    "title2": "BEDRBEER",
+    "title": "Kogebog",
+    "title2": "Min Kogebog",
+    "slug": "min-kogebog",
     "year": 2025,
-    "image": "assets/BEDRBEER/BB1.png",
-    "intro": "Et bryggeriunivers med kant og energi, hvor alkoholfri øl præsenteres som et attraktivt valg. Her møder du en digital prototype med levende farver, små animationer og et brand, der tør vise, at øl uden alkohol kan være både sjovt og socialt inkluderende.",
-    "description": " BEDR BEER er et UX/UI-projekt, hvor vi udviklede en brandidentitet og digital prototype for et fiktivt bryggeri med fokus på alkoholfri øl. Opgaven var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge gennem research, brandudvikling, design og kodning. Vi arbejdede ud fra Double Diamond-modellen med både interviews, spørgeskemaer og netnografi, og vi byggede identiteten op med farver, logo og infografik, der præsenterer produktet på en frisk og gennemsigtig måde. Resultatet blev en interaktiv prototype med parallax-effekter, animationer og et visuelt univers, der forbinder design og kode til en samlet oplevelse.",
-    "tags": ["Branding", "UI", "JS", "Design"],
-    "gallery": [
-      "assets/BEDRBEER/BB1.png",
-      "assets/BEDRBEER/BB2.png",
-      "assets/BEDRBEER/BB3.png",
-      "assets/BEDRBEER/BB6.png",
-      "assets/BEDRBEER/BB5.png",
-      "assets/BEDRBEER/BB4.png",
-      "assets/BEDRBEER/BB7.png",
-      "assets/BEDRBEER/BB8.png",
-      "assets/BEDRBEER/BB9.png",
-      "assets/BEDRBEER/3DMODEL1.png",
-      "assets/BEDRBEER/BB10.png"
-    ],
+    "image": "assets/WEBAPP/mockup2.png",
+    "intro": "En rolig, reklamefri opskrifts-webapp i mobil-first design. Gem, redigér og find egne opskrifter i et klart og hurtigt flow.",
+    "description": "Min Kogebog er en React-baseret single-page app bygget mobil-first. Fokus er et enkelt og trygt sted at samle egne opskrifter med logisk informationsarkitektur, hurtig søgning/filtrering og et tydeligt CRUD-flow. Data og login håndteres via Firebase (Auth + Firestore), og UI’et er holdt lyst, roligt og friktionsfrit. Appen åbner med en let splash-animation og prioriterer læsbar typografi, simple kort og konsistente mønstre.",
+    "tags": ["React", "Firebase", "SPA", "UX", "CRUD"],
+    "gallery": ["assets/WEBAPP/mockup2.png"],
     "feature": [
       {
-        "title": "3D dåse",
-        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
-        "image": "/assets/BEDRBEER/3DMODEL2.png",
-        "image2": "/assets/provselv.svg",
-        "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
-        "codeImg": "/assets/BEDRBEER/code-badge.png",
-        "model": {
-          "src": "/models/passssiiiooonnn.glb",
-          "alt": "BEDR BEER dåse",
-          "autoRotate": true,
-          "orbit": "20deg 90deg 2m"
-        }
+        "title": "Mobil-first SPA",
+        "text": "Layout, navigation og touch-interaktioner er designet til telefon først. Hurtig adgang til at oprette, redigere og finde opskrifter uden støj.",
+        "image": "/assets/WEBAPP/mockup.png"
+      },
+      {
+        "title": "Login + egne data",
+        "text": "Firebase Auth og Firestore sikrer, at hver bruger ser og redigerer egne opskrifter. Stramt CRUD-flow og validering giver færre fejl.",
+        "image": "/assets/WEBAPP/mockup4.jpeg"
+      },
+      {
+        "title": "Søgning og filtrering",
+        "text": "Listevisning med søg og simple filtre giver overblik, også når samlingen vokser. Fokus på performance og læsbarhed.",
+        "image": "/assets/WEBAPP/mockup3.png"
       }
     ],
     "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Photohop",
-      "Illustrator",
-      "Figma",
-      "AE"
+      "React",
+      "React Router",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "CSS"
     ],
-    "tools": ["Figma"],
+    "tools": ["Figma", "Illustrator"],
     "illustrations": [
-      "/assets/BEDRBEER/illu4.png",
-      "/assets/BEDRBEER/illu2.png",
-      "/assets/BEDRBEER/illu3.png",
-      "/assets/BEDRBEER/illu1.png",
-      "/assets/BEDRBEER/illu5.png",
-      "/assets/BEDRBEER/illu6.png"
+      "/assets/WEBAPP/illu1.png",
+      "/assets/WEBAPP/illu2.png",
+      "/assets/WEBAPP/illu3.png",
+      "/assets/WEBAPP/illu4.png",
+      "/assets/WEBAPP/illu5.png",
+      "/assets/WEBAPP/illu6.png",
+      "/assets/WEBAPP/illu7.png"
     ]
   },
-
   {
     "id": 2,
     "title": "CILLECYKLUS",
@@ -142,55 +130,59 @@
 
   {
     "id": 4,
-    "title": "Min Kogebog",
-    "title2": "Min Kogebog",
+    "title": "BEDRBEER",
+    "title2": "BEDRBEER",
     "year": 2025,
-    "image": "assets/WEBAPP/mockup2.png",
-    "intro": "En rolig, reklamefri opskrifts-webapp i mobil-first design. Gem, redigér og find egne opskrifter i et klart og hurtigt flow.",
-    "description": "Min Kogebog er en React-baseret single-page app bygget mobil-first. Fokus er et enkelt og trygt sted at samle egne opskrifter med logisk informationsarkitektur, hurtig søgning/filtrering og et tydeligt CRUD-flow. Data og login håndteres via Firebase (Auth + Firestore), og UI’et er holdt lyst, roligt og friktionsfrit. Appen åbner med en let splash-animation og prioriterer læsbar typografi, simple kort og konsistente mønstre.",
-    "tags": ["React", "Firebase", "SPA", "UX", "CRUD"],
+    "image": "assets/BEDRBEER/BB1.png",
+    "intro": "Et bryggeriunivers med kant og energi, hvor alkoholfri øl præsenteres som et attraktivt valg. Her møder du en digital prototype med levende farver, små animationer og et brand, der tør vise, at øl uden alkohol kan være både sjovt og socialt inkluderende.",
+    "description": " BEDR BEER er et UX/UI-projekt, hvor vi udviklede en brandidentitet og digital prototype for et fiktivt bryggeri med fokus på alkoholfri øl. Opgaven var at gøre alkoholfri øl mere attraktivt og socialt accepteret blandt unge gennem research, brandudvikling, design og kodning. Vi arbejdede ud fra Double Diamond-modellen med både interviews, spørgeskemaer og netnografi, og vi byggede identiteten op med farver, logo og infografik, der præsenterer produktet på en frisk og gennemsigtig måde. Resultatet blev en interaktiv prototype med parallax-effekter, animationer og et visuelt univers, der forbinder design og kode til en samlet oplevelse.",
+    "tags": ["Branding", "UI", "JS", "Design"],
     "gallery": [
-      "assets/WEBAPP/mockup2.png",
-      "assets/MIN_KOGEBOG/screen-2.jpg",
-      "assets/MIN_KOGEBOG/screen-3.jpg"
+      "assets/BEDRBEER/BB1.png",
+      "assets/BEDRBEER/BB2.png",
+      "assets/BEDRBEER/BB3.png",
+      "assets/BEDRBEER/BB6.png",
+      "assets/BEDRBEER/BB5.png",
+      "assets/BEDRBEER/BB4.png",
+      "assets/BEDRBEER/BB7.png",
+      "assets/BEDRBEER/BB8.png",
+      "assets/BEDRBEER/BB9.png",
+      "assets/BEDRBEER/3DMODEL1.png",
+      "assets/BEDRBEER/BB10.png"
     ],
     "feature": [
       {
-        "title": "Mobil-first SPA",
-        "text": "Layout, navigation og touch-interaktioner er designet til telefon først. Hurtig adgang til at oprette, redigere og finde opskrifter uden støj.",
-        "image": "/assets/WEBAPP/mockup.png"
-      },
-      {
-        "title": "Login + egne data",
-        "text": "Firebase Auth og Firestore sikrer, at hver bruger ser og redigerer egne opskrifter. Stramt CRUD-flow og validering giver færre fejl.",
-        "image": "/assets/WEBAPP/mockup4.jpeg"
-      },
-      {
-        "title": "Søgning og filtrering",
-        "text": "Listevisning med søg og simple filtre giver overblik, også når samlingen vokser. Fokus på performance og læsbarhed.",
-        "image": "/assets/WEBAPP/mockup3.png"
+        "title": "3D dåse",
+        "text": "Et af de sjove elementer er en 3D-dåse, der roterer af sig selv og som brugeren kan dreje rundt på skærmen. Sammen med parallax-scroll og små animationer giver det oplevelsen et legende præg, der matcher brandets tone.",
+        "image": "/assets/BEDRBEER/3DMODEL2.png",
+        "image2": "/assets/provselv.svg",
+        "code": "{projects.map((project) => (\\n  <ProjectCard key={project.id} {...project} />\\n))}",
+        "codeImg": "/assets/BEDRBEER/code-badge.png",
+        "model": {
+          "src": "/models/passssiiiooonnn.glb",
+          "alt": "BEDR BEER dåse",
+          "autoRotate": true,
+          "orbit": "20deg 90deg 2m"
+        }
       }
     ],
     "tech": [
-      "React",
-      "React Router",
-      "Firebase Auth",
-      "Cloud Firestore",
-      "CSS"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Photohop",
+      "Illustrator",
+      "Figma",
+      "AE"
     ],
-    "tools": ["Figma", "Illustrator"],
+    "tools": ["Figma"],
     "illustrations": [
-      "/assets/WEBAPP/illu1.png",
-      "/assets/WEBAPP/illu2.png",
-      "/assets/WEBAPP/illu3.png",
-      "/assets/WEBAPP/illu4.png",
-      "/assets/WEBAPP/illu5.png",
-      "/assets/WEBAPP/illu6.png",
-      "/assets/WEBAPP/illu7.png"
-    ],
-    "links": [
-      { "url": "https://sofienholm.github.io/web-app/", "text": "Se appen" },
-      { "url": "https://github.com/Sofienholm/web-app", "text": "GitHub" }
+      "/assets/BEDRBEER/illu4.png",
+      "/assets/BEDRBEER/illu2.png",
+      "/assets/BEDRBEER/illu3.png",
+      "/assets/BEDRBEER/illu1.png",
+      "/assets/BEDRBEER/illu5.png",
+      "/assets/BEDRBEER/illu6.png"
     ]
   }
 ]
