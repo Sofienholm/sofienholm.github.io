@@ -178,7 +178,7 @@
     "title": "Min Kogebog",
     "title2": "Min Kogebog",
     "year": 2025,
-    "image": "assets/MIN_KOGEBOG/cover.jpg",
+    "image": "assets/WEBAPP/mockup.png",
     "intro": "En rolig, reklamefri opskrifts-webapp i mobil-first design. Gem, redigér og find egne opskrifter i et klart og hurtigt flow.",
     "description": "Min Kogebog er en React-baseret single-page app bygget mobil-first. Fokus er et enkelt og trygt sted at samle egne opskrifter med logisk informationsarkitektur, hurtig søgning/filtrering og et tydeligt CRUD-flow. Data og login håndteres via Firebase (Auth + Firestore), og UI’et er holdt lyst, roligt og friktionsfrit. Appen åbner med en let splash-animation og prioriterer læsbar typografi, simple kort og konsistente mønstre.",
     "tags": ["React", "Firebase", "SPA", "UX", "CRUD"],
