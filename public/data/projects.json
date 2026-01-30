@@ -139,51 +139,18 @@
       "assets/PLAKATEN/illu5.png"
     ]
   },
-  {
-    "id": 3,
-    "title": "PLAKATEN",
-    "title2": "PLAKATEN",
-    "year": 2025,
-    "image": "assets/PLAKATEN/pla1.png",
-    "intro": "Fra fysisk butik til digital oplevelse – en webshop med fokus på brugervenlighed, inspiration og mobilvenlighed. Resultatet er en løsning, hvor kunderne nemt kan gå på opdagelse i plakater og rammer, uanset om de shopper fra sofaen eller på farten.",
-    "description": "Dette handlede om at skabe et responsivt webdesign-projekt for virksomheden Plakaten, med fokus på mobile-first og responsivt design. Opgaven var at gøre det lettere og mere inspirerende at udforske sortimentet af plakater og rammer online. Vi indsamlede indsigter via interviews og observationer i butikken og byggede løsningen op med personas og Value Proposition Canvas. Designet blev minimalistisk med plads til produkterne, understøttet af filtrering og inspirationssider. Vi arbejdede med research, UX-design og kodning i HTML/CSS, hvor vi fik bygge et responsivt layout, der fungerer på både mobil, tablet og desktop.",
-    "tags": ["Branding", "UI", "JS", "Design"],
-    "gallery": [
-      "assets/PLAKATEN/pla1.png",
-      "assets/PLAKATEN/pla2.jpg",
-      "assets/PLAKATEN/pla3.png"
-    ],
-    "feature": [
-      {
-        "title": "Responsivt layout",
-        "text": "Projektets kerne lå i at skabe et responsivt site, der skalerer gnidningsfrit på tværs af skærmstørrelser. Alt fra layout til billeder blev optimeret, så brugeroplevelsen er konsistent og indbydende uanset enhed.",
-        "video": [
-          "https://player.vimeo.com/video/1119738996?autoplay=1&loop=1&title=0&byline=0&portrait=0",
-          "https://player.vimeo.com/video/1119738981?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        ]
-      }
-    ],
-    "tech": ["HTML", "CSS", "JavaScript", "Photohop", "Illustrator"],
-    "tools": ["Figma"],
-    "illustrations": [
-      "assets/PLAKATEN/illu1.png",
-      "assets/PLAKATEN/illu2.jpeg",
-      "assets/PLAKATEN/illu3.png",
-      "assets/PLAKATEN/illu4.png",
-      "assets/PLAKATEN/illu5.png"
-    ]
-  },
+
   {
     "id": 4,
     "title": "Min Kogebog",
     "title2": "Min Kogebog",
     "year": 2025,
-    "image": "assets/WEBAPP/mockup.png",
+    "image": "assets/WEBAPP/mockup2.png",
     "intro": "En rolig, reklamefri opskrifts-webapp i mobil-first design. Gem, redigér og find egne opskrifter i et klart og hurtigt flow.",
     "description": "Min Kogebog er en React-baseret single-page app bygget mobil-first. Fokus er et enkelt og trygt sted at samle egne opskrifter med logisk informationsarkitektur, hurtig søgning/filtrering og et tydeligt CRUD-flow. Data og login håndteres via Firebase (Auth + Firestore), og UI’et er holdt lyst, roligt og friktionsfrit. Appen åbner med en let splash-animation og prioriterer læsbar typografi, simple kort og konsistente mønstre.",
     "tags": ["React", "Firebase", "SPA", "UX", "CRUD"],
     "gallery": [
-      "assets/WEBAPP/mockup.png",
+      "assets/WEBAPP/mockup2.png",
       "assets/MIN_KOGEBOG/screen-2.jpg",
       "assets/MIN_KOGEBOG/screen-3.jpg"
     ],
@@ -191,17 +158,17 @@
       {
         "title": "Mobil-first SPA",
         "text": "Layout, navigation og touch-interaktioner er designet til telefon først. Hurtig adgang til at oprette, redigere og finde opskrifter uden støj.",
-        "video": []
+        "image": "/assets/WEBAPP/mockup.png"
       },
       {
         "title": "Login + egne data",
         "text": "Firebase Auth og Firestore sikrer, at hver bruger ser og redigerer egne opskrifter. Stramt CRUD-flow og validering giver færre fejl.",
-        "video": []
+        "image": "/assets/WEBAPP/mockup4.jpeg"
       },
       {
         "title": "Søgning og filtrering",
         "text": "Listevisning med søg og simple filtre giver overblik, også når samlingen vokser. Fokus på performance og læsbarhed.",
-        "video": []
+        "image": "/assets/WEBAPP/mockup3.png"
       }
     ],
     "tech": [
@@ -213,8 +180,13 @@
     ],
     "tools": ["Figma", "Illustrator"],
     "illustrations": [
-      "assets/MIN_KOGEBOG/illus-1.png",
-      "assets/MIN_KOGEBOG/illus-2.png"
+      "/assets/WEBAPP/illu1.png",
+      "/assets/WEBAPP/illu2.png",
+      "/assets/WEBAPP/illu3.png",
+      "/assets/WEBAPP/illu4.png",
+      "/assets/WEBAPP/illu5.png",
+      "/assets/WEBAPP/illu6.png",
+      "/assets/WEBAPP/illu7.png"
     ],
     "links": [
       { "url": "https://sofienholm.github.io/web-app/", "text": "Se appen" },
